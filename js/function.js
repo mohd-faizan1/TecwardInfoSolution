@@ -393,5 +393,12 @@
       // insert before the first existing <script> tag
       $("script").first().before($s1);
   });
+$(window).on('scroll', function() {
+  if ($(this).scrollTop() < 100) {
+    $('.header-sticky').addClass('show');
+  } else {
+    $('.header-sticky').removeClass('show');
+  }
+});
 
 })(jQuery);

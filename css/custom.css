@@ -484,18 +484,22 @@ body{
 /************************************/
 
 header.main-header{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 100;
 }
 
+.header-sticky.show {
+  top: 0 !important;
+}
 header.main-header .header-sticky{
 	position: relative;
 	top: 0;
 	z-index: 100;
+    top: -100px;
+    transition: top 0.4s ease; 
 }
-
 header.main-header .header-sticky.hide{
 	transform: translateY(-100%);
 	transition: transform 0.3s ease-in-out;
@@ -512,7 +516,9 @@ header.main-header .header-sticky.active{
 	background: var(--bg-color);
 	border-bottom: 1px solid var(--divider-color);
 }
-
+header.main-header:hover .header-sticky{
+    top: 0px;
+}
 .navbar{
 	padding: 30px 0;
 	align-items: center;
@@ -4196,7 +4202,7 @@ header.main-header .header-sticky.active{
      margin-left: 10px;
     color: #000;
     background: #fff;
-    padding: 10px;
+    padding: 8px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -4214,6 +4220,41 @@ img{width: 100%;}
 .service_detail ul li{list-style: disc;}
 .mg-top{margin-top: 50px;}
 .mg-bottom{margin-top: 50px;}
+
+#dlgPopUp .modal-content {
+    background-color:transparent;
+}
+#dlgPopUp .modal-body {
+    padding: 0px;
+    box-shadow: 1px 0px 17px -2px #3737377d;
+}
+#dlgPopUp .contact-form {
+    border-radius: 20px;
+}
+button.btnxmark {
+    position: absolute;
+    z-index: 9;
+    width: 50px;
+    font-size: 24px;
+    height: 50px;
+    border: none;
+    background: var(--primary-text);
+    border-radius: 50%;
+    color: #fff;
+    top: 0px;
+    right: -60px;
+}
+.mnpopform .modal-dialog {
+    max-width: 50% !important;
+    margin-top: 42px;
+    margin-bottom: 0px !important;
+}
+@media (max-width: 1650px) {
+    .mnpopform .modal-dialog {
+        max-width: 50% !important;
+        margin-top: 12px;
+    }
+}
 
 /************************************/
 /***      32. Responsive css      ***/
@@ -5726,5 +5767,9 @@ img{width: 100%;}
     }
     .footer-policy-text .footer-links {
          flex-flow: wrap;
+    }
+    header.main-header .header-sticky{
+    	top: 0 !important;
+        transition: none; 
     }
 }
