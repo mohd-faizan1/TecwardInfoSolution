@@ -490,21 +490,21 @@ header.main-header{
 	z-index: 100;
 }
 
-.header-sticky.show {
+/* .header-sticky.show {
   top: 0 !important;
-}
+} */
 header.main-header .header-sticky{
 	position: relative;
 	top: 0;
 	z-index: 100;
-    top: -100px;
+    top: 0px;
     transition: top 0.4s ease; 
 }
-header.main-header .header-sticky.hide{
+/* header.main-header .header-sticky.hide{
 	transform: translateY(-100%);
 	transition: transform 0.3s ease-in-out;
 	border-radius: 0;
-}
+} */
 
 header.main-header .header-sticky.active{
 	position: fixed;
@@ -516,9 +516,9 @@ header.main-header .header-sticky.active{
 	background: var(--bg-color);
 	border-bottom: 1px solid var(--divider-color);
 }
-header.main-header:hover .header-sticky{
+/* header.main-header:hover .header-sticky{
     top: 0px;
-}
+} */
 .navbar{
 	padding: 30px 0;
 	align-items: center;
@@ -599,6 +599,27 @@ header.main-header:hover .header-sticky{
     background: linear-gradient(110.01deg, var(--accent-color) 0.26%, var(--accent-secondary-color) 99.99%);
 	transition: all 0.3s ease-in-out;
 	text-align: left;
+}
+.main-menu ul ul.with-partition{
+	width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 partitions */
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+}
+.main-menu ul ul.with-partition.industries-menu {
+    grid-template-columns: repeat(3, 1fr); /* 3 partitions */
+}
+.main-menu ul ul.with-partition img{
+	width: 30px;
+    filter: brightness(0) saturate(100%) invert(1);
+}
+.main-menu .navbar-nav .nav-item.submenu:has(> ul.with-partition) {
+    position: static !important;
+}
+
+.main-menu .navbar-nav:has(ul.with-partition) {
+    position: relative !important;
 }
 
 .main-menu ul li.submenu:first-child ul{

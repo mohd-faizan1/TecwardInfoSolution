@@ -64,11 +64,11 @@
 
 	if ($('.service-slider').length) {
 		const service_slider = new Swiper('.service-slider .swiper', {
-			speed: 2000,
+			speed: 1000,
 			spaceBetween: 30,
 			loop: true,
 			autoplay: {
-				delay: 3000,
+				delay: 2000,
 			},
 			pagination: {
 				el: '.service-slider-pagination',
@@ -393,12 +393,13 @@
       // insert before the first existing <script> tag
       $("script").first().before($s1);
   });
-$(window).on('scroll', function() {
-  if ($(this).scrollTop() < 100) {
-    $('.header-sticky').addClass('show');
-  } else {
-    $('.header-sticky').removeClass('show');
-  }
-});
+  $("#header").load("header.html");
+// $(window).on('scroll', function() {
+//   if ($(this).scrollTop() < 100) {
+//     $('.header-sticky').addClass('show');
+//   } else {
+//     $('.header-sticky').removeClass('show');
+//   }
+// });
 
 })(jQuery);
