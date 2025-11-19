@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111.865" height="123.008" viewBox="0 0 111.865 123.008">
+  <g id="Group_105376" data-name="Group 105376" transform="translate(0.5 0.571)">
+    <path id="Path_78313" data-name="Path 78313" d="M55.369,0,0,30.419V90.864l55.368,31,55.5-30.542V30.7Z" transform="translate(0)" fill="#fff" stroke="#69787c" stroke-width="1"/>
+    <path id="Path_78314" data-name="Path 78314" d="M92.41,45.114,41.038,73.333v56.083L92.41,158.18l51.49-28.337V73.594Z" transform="translate(-37.234 -40.505)" fill="#56676a"/>
+    <rect id="Rectangle_44695" data-name="Rectangle 44695" width="6.406" height="36.433" transform="translate(3.804 41.842)" fill="#16303a"/>
+    <rect id="Rectangle_44696" data-name="Rectangle 44696" width="6.406" height="36.433" transform="translate(100.291 41.842)" fill="#16303a"/>
+    <path id="Path_78315" data-name="Path 78315" d="M142.71,106.363,96.76,131.6v50.159l45.95,25.726,46.052-25.344V131.834Z" transform="translate(-87.552 -95.949)" fill="#fff" stroke="#16303a" stroke-width="1"/>
+    <rect id="Rectangle_44694" data-name="Rectangle 44694" width="92.884" height="31.629" transform="translate(9.008 44.645)" fill="#16303a"/>
+    <g id="Group_105375" data-name="Group 105375" transform="translate(27.831 52.158)">
+      <g id="Group_105374" data-name="Group 105374" transform="translate(0)">
+        <rect id="Rectangle_1833" data-name="Rectangle 1833" width="2.506" height="15.576" transform="translate(14.276)" fill="#fff"/>
+        <path id="Path_5796" data-name="Path 5796" d="M1025.66,278.875a2.423,2.423,0,0,1-2.556,2.556c-1.471,0-1.8-1.416-1.8-2.287v-5.883H1018.8v5.933a5.27,5.27,0,0,0,1.252,3.54,4.214,4.214,0,0,0,3,1.089,3.5,3.5,0,0,0,2.556-.872v.872h2.506V273.266H1025.6v5.609Z" transform="translate(-1000.111 -268.255)" fill="#fff"/>
+        <path id="Path_5797" data-name="Path 5797" d="M1563.763,68.316h-2.506v3.758H1559.4v2.5h1.852v8.06h2.506v-8.06h1.852v-2.5h-1.852Z" transform="translate(-1530.807 -67.064)" fill="#fff"/>
+        <path id="Path_5798" data-name="Path 5798" d="M1929.185,268.959a2.991,2.991,0,0,1-2.015.762,2.9,2.9,0,0,1-3-3.049,2.86,2.86,0,0,1,3-3,2.749,2.749,0,0,1,2.015.762l.38.327,1.634-1.634-.381-.382a5.66,5.66,0,0,0-3.651-1.416,5.131,5.131,0,0,0-5.392,5.337,5.3,5.3,0,0,0,5.391,5.392,5.557,5.557,0,0,0,3.758-1.416l.381-.382-1.743-1.742Z" transform="translate(-1886.535 -256.541)" fill="#fff"/>
+        <path id="Path_5799" data-name="Path 5799" d="M2514.609,5.933a3.651,3.651,0,0,0-2.723-1.089,3.4,3.4,0,0,0-2.451.872V0h-2.506V15.575h2.506V9.694a2.239,2.239,0,0,1,2.282-2.556c1.47,0,1.47,1.416,1.47,2.287v6.155h2.5V9.372a4.516,4.516,0,0,0-1.089-3.431" transform="translate(-2460.958)" fill="#fff"/>
+        <path id="Path_5800" data-name="Path 5800" d="M2113.678,457.426a1.8,1.8,0,1,1-1.8,1.8,1.8,1.8,0,0,1,1.8-1.8" transform="translate(-2073.152 -449.039)" fill="#ff3d2e"/>
+        <path id="Path_5801" data-name="Path 5801" d="M10.837,34.981a5.208,5.208,0,0,1-3.595,1.47A4.843,4.843,0,0,1,2.4,31.278c0-2.995,2.015-5.174,4.792-5.174a5.413,5.413,0,0,1,3.595,1.47l.382.382L12.8,26.322l-.384-.381a7.335,7.335,0,0,0-5.228-2.179A7.239,7.239,0,0,0,0,31.333a7.16,7.16,0,0,0,7.188,7.515,7.064,7.064,0,0,0,5.226-2.181l.382-.382-1.634-1.743Z" transform="translate(0.008 -23.328)" fill="#fff"/>
+        <rect id="Rectangle_1834" data-name="Rectangle 1834" width="54.738" height="15.576" transform="translate(0.008)" fill="none"/>
+      </g>
+    </g>
+    <g id="Group" transform="translate(37.434 22.625)">
+      <text id="TOP" transform="translate(10.878 4)" fill="#16303a" font-size="4" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">TOP</tspan></text>
+      <text id="MOBILE_APP" data-name="MOBILE APP" transform="translate(0 11.302)" fill="#16303a" font-size="4" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">MOBILE APP</tspan></text>
+    </g>
+    <g id="Group-2" data-name="Group" transform="translate(35.881 83.08)">
+      <text id="DEVELOPERS" transform="translate(0 4)" fill="#16303a" font-size="4" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">DEVELOPERS</tspan></text>
+      <text id="_2020" data-name="2020" transform="translate(10.799 11.302)" fill="#16303a" font-size="4" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2020</tspan></text>
+    </g>
+    <line id="Line_444" data-name="Line 444" x2="69.663" transform="translate(21.619 42.043)" fill="none" stroke="#16303a" stroke-width="0.5"/>
+    <line id="Line_445" data-name="Line 445" x2="69.663" transform="translate(21.619 78.276)" fill="none" stroke="#16303a" stroke-width="0.5"/>
+  </g>
+</svg>

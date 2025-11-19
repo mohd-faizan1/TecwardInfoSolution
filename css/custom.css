@@ -578,7 +578,9 @@ header.main-header .header-sticky.active{
 .main-menu ul li a:focus{
 	color: var(--accent-color);
 }
-
+.main-menu ul li a.active{
+	color: var(--accent-color) !important;
+}
 .main-menu ul li a:focus-visible{
     box-shadow: none;
 }
@@ -2112,7 +2114,17 @@ header.main-header .header-sticky.active{
     background-position: bottom center;
     background-size: auto;
     border-top: 1px solid var(--divider-color);
-    padding: 100px 0 0;
+    padding: 60px 0 0;
+}
+
+.main-footer .contact-info-item .icon-box{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+
+}
+.main-footer .contact-info-item .icon-box img{
+    max-width: 50px;
 }
 
 .main-footer .section-row{
@@ -4047,7 +4059,7 @@ header.main-header .header-sticky.active{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-    margin-top: 160px;
+    margin-top: 30px;
 }
 
 .contact-info-item{

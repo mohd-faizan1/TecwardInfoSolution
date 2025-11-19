@@ -68,7 +68,7 @@
 			spaceBetween: 30,
 			loop: true,
 			autoplay: {
-				delay: 2000,
+				delay: 1000,
 			},
 			pagination: {
 				el: '.service-slider-pagination',
@@ -356,11 +356,6 @@
 					target: '_blank'
 				}).html('WhatsApp <i class="fa-brands fa-whatsapp"></i>')
 			),
-			$('<li>', { class: 'Twitter' }).append(
-				$('<a>', {
-					href: 'skype:live:sam_20814?chat'
-				}).html('Skype <i class="fa-brands fa-skype"></i>')
-			),
 			$('<li>', { class: 'fb' }).append(
 				$('<a>', {
 					href: 'tel:+919650765250',
@@ -393,7 +388,21 @@
       // insert before the first existing <script> tag
       $("script").first().before($s1);
   });
-  $("#header").load("header.html");
+$("#header").load("header.html", function () {
+    let currentPage = window.location.pathname.split("/").pop(); 
+
+    $("#header .nav-link").each(function () {
+        let linkPage = $(this).attr("href");
+
+        if (linkPage === currentPage) {
+            $(this).addClass("active");
+        }
+    });
+});
+
+  $("#mainFooter").load("footer.html");
+
+
 // $(window).on('scroll', function() {
 //   if ($(this).scrollTop() < 100) {
 //     $('.header-sticky').addClass('show');
