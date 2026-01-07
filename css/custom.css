@@ -1477,6 +1477,7 @@ header.main-header .header-sticky.active{
     filter: blur(5px);
 }
 
+.testimonial-btn,
 .project-btn{
 	position: absolute;
     top: 50px;
@@ -1486,6 +1487,13 @@ header.main-header .header-sticky.active{
     transition: all 0.4s ease-in-out;
     z-index: 1;
 }
+.testimonial-btn{
+   bottom: 10px;
+    top: auto;
+    opacity: 1;
+    visibility: visible;
+    z-index: 3;
+}
 
 .project-item:hover .project-btn{
     top: 30px;
@@ -1493,6 +1501,7 @@ header.main-header .header-sticky.active{
 	visibility: visible;
 }
 
+.testimonial-btn a,
 .project-btn a{
 	position: relative;
     display: block;
@@ -1507,16 +1516,19 @@ header.main-header .header-sticky.active{
     transition: all 0.3s ease-in-out;
 }
 
+.testimonial-btn a:hover,
 .project-btn a:hover{
     background-position: right center;
 }
 
+.testimonial-btn a img,
 .project-btn a img{
     width: 100%;
     max-width: 20px;
     transition: all 0.3s ease-in-out;
 }
 
+.testimonial-btn a:hover,
 .project-btn a:hover{
 	transform: rotate(45deg);
 }
