@@ -372,43 +372,67 @@
 			)
 		)
 	);
-	$('body').append($(stickyHtml));
-	// END: Create Sticky Contact Icons
 
-	var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-
-  $(function () {
-      var $s1 = $("<script>", {
-          async: true,
-          src: "https://embed.tawk.to/690b9f3f8f9062194f4e0527/1j9amc4qc",
-          charset: "UTF-8",
-          crossorigin: "*"
-      });
-
-      // insert before the first existing <script> tag
-      $("script").first().before($s1);
-  });
-$("#header").load("header.html", function () {
-    let currentPage = window.location.pathname.split("/").pop(); 
-
-    $("#header .nav-link").each(function () {
-        let linkPage = $(this).attr("href");
-
-        if (linkPage === currentPage) {
-            $(this).addClass("active");
+	$('.video-popup').magnificPopup({
+        type: 'inline',
+        fixedContentPos: true,
+        closeBtnInside: true,
+        showCloseBtn: true,
+        removalDelay: 200,
+        mainClass: 'mfp-fade',
+        items: {
+            src: '#videoPopup'
+        },
+        callbacks: {
+            open: function () {
+                var videoUrl = this.st.el.data('video');
+                $('#popupVideo source').attr('src', videoUrl);
+                $('#popupVideo')[0].load();
+            },
+            close: function () {
+                var video = $('#popupVideo')[0];
+                video.pause();
+                $('#popupVideo source').attr('src', '');
+            }
         }
     });
-});
 
-  $("#mainFooter").load("footer.html");
-
-
-// $(window).on('scroll', function() {
-//   if ($(this).scrollTop() < 100) {
-//     $('.header-sticky').addClass('show');
-//   } else {
-//     $('.header-sticky').removeClass('show');
-//   }
-// });
+	$('body').append($(stickyHtml));
+	// END: Create Sticky Contact Icons
+	
+	$(function () {
+		var $s1 = $("<script>", {
+			async: true,
+			src: "https://embed.tawk.to/690b9f3f8f9062194f4e0527/1j9amc4qc",
+			charset: "UTF-8",
+			crossorigin: "*"
+		});
+		
+		// insert before the first existing <script> tag
+		$("script").first().before($s1);
+	});
+	$("#header").load("header.html", function () {
+		let currentPage = window.location.pathname.split("/").pop();
+		
+		$("#header .nav-link").each(function () {
+			let linkPage = $(this).attr("href");
+			
+			if (linkPage === currentPage) {
+				$(this).addClass("active");
+			}
+		});
+	});
+	
+	$("#mainFooter").load("footer.html");
+	var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+	
+	
+	// $(window).on('scroll', function() {
+		//   if ($(this).scrollTop() < 100) {
+			//     $('.header-sticky').addClass('show');
+			//   } else {
+				//     $('.header-sticky').removeClass('show');
+				//   }
+				// });
 
 })(jQuery);

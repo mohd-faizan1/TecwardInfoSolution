@@ -3250,7 +3250,10 @@ header.main-header .header-sticky.active{
 }
 
 .post-entry a{
-    color: var(--accent-color);
+    color: var(--text-color);
+}
+.post-entry blockquote a{
+    color: var(--primary-color);
 }
 
 .post-entry h1,
@@ -3889,6 +3892,41 @@ header.main-header .header-sticky.active{
     z-index: 1;
 }
 
+/************************************/
+/***   26. Testimonials Video Page css  ***/
+/************************************/
+
+.page-testimonials-video{
+    padding: 80px 0 50px;
+}
+
+.page-testimonials-video .testimonial-video-item{
+    position: relative;
+    border: 1px solid var(--divider-color);
+    background: var(--secondary-color) url('../images/testimonial-item-bg.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+    padding: 30px 25px;
+    overflow: hidden;
+}
+
+.page-testimonials-video .testimonial-video-item .testimonial-video,
+.page-testimonials-video .testimonial-video-item .testimonial-header{
+    position: relative;
+    z-index: 1;
+}
+.page-testimonials-video .testimonial-video-item .testimonial-header{
+    border-top: 1px solid var(--divider-color);
+    border-bottom: 0px solid var(--divider-color);
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    gap: 10px;
+}
 /************************************/
 /***     27. Image Gallery css    ***/
 /************************************/

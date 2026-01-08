@@ -1,233 +1,282 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken">
-	<!-- Page Title -->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Awaiken">
+    <!-- Page Title -->
     <title>Nextmind - AI Agency & Technology HTML Template</title>
-	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<!-- Google Fonts Css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-	<!-- Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- Font Awesome Icon Css-->
-	<link href="css/all.min.css" rel="stylesheet" media="screen">
-	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet">
     <!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Mouse Cursor Css File -->
-	<link rel="stylesheet" href="css/mousecursor.css">
-	<!-- Main Custom Css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <style>
+        /* ===============================
+           VIDEO POPUP (Magnific Popup)
+           =============================== */
+        .mfp-content {
+            width: 100%;
+            max-width: 1096px;
+            padding: 12px;
+        }
+
+        .popup-card {
+            position: relative;
+            background:linear-gradient(to right, #592c1b 0%, var(--accent-secondary-color) 50%, #592c1b 100%);
+            border-radius: 12px;
+            padding: 40px 12px 12px 12px;
+        }
+
+        .popup-card video {
+            width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+
+        .mfp-close {
+            position: absolute !important;
+            right: 10px !important;
+            top: 10px !important;
+            line-height: 42px;
+            font-size: 26px;
+            color: #fff !important;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 1;
+            z-index: 9999;
+        }
+
+        /* ===============================
+           TESTIMONIAL VIDEO THUMBNAIL
+           =============================== */
+        .testimonial-video-item .testimonial-video {
+            position: relative;
+        }
+
+        .testimonial-video-item .video-thumb {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .testimonial-video-item .video-thumb video {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .testimonial-video-item .video-thumbnail a {
+            display: block;
+            cursor: none;
+        }
+
+        .testimonial-video-item .video-thumbnail figure {
+            display: block;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .testimonial-video-item .video-thumbnail figure:before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(6, 6, 6, 0) 49.26%, rgba(6, 6, 6, 0.6) 86.32%);
+            z-index: 1;
+        }
+
+        .testimonial-video-item .video-thumbnail img {
+            width: 100%;
+            aspect-ratio: 1 / 01;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .testimonial-video-item .testimonial-video:hover .video-thumbnail img {
+            transform: scale(1.1);
+            filter: blur(5px);
+        }
+
+        /* ===============================
+           PLAY BUTTON
+           =============================== */
+        .testimonial-video-item .video-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease-in-out;
+            z-index: 1;
+        }
+
+        .testimonial-video-item .testimonial-video:hover .video-play-btn {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .testimonial-video-item .video-play-btn a {
+            background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-secondary-color) 50%, var(--accent-color) 100%);
+            background-size: 200% auto;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .testimonial-video-item .video-play-btn a:hover {
+            background-position: right center;
+            transform: rotate(120deg);
+        }
+
+        .testimonial-video-item .video-play-btn a img {
+            width: 100%;
+            max-width: 30px;
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
 </head>
+
 <body>
 
     <!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div>
-	<!-- Preloader End -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
 
     <!-- Header Start -->
-	<header class="main-header" id="header"></header>
-	<!-- Header End -->
+    <header class="main-header" id="header"></header>
+    <!-- Header End -->
 
     <!-- Page Header Start -->
-	<div class="page-header">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-12">
-					<!-- Page Header Box Start -->
-					<div class="page-header-box">
-						<h1 class="wow fadeInUp" data-cursor="-opaque">Video <span>testimonials</span></h1>
-						<nav class="wow fadeInUp" data-wow-delay="0.2s">
+    <div class="page-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Page Header Box Start -->
+                    <div class="page-header-box">
+                        <h1 class="wow fadeInUp" data-cursor="-opaque">Video <span>testimonials</span></h1>
+                        <nav class="wow fadeInUp" data-wow-delay="0.2s">
                             <ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="./">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">video-testimonials</li>
-							</ol>
-						</nav>
-					</div>
-					<!-- Page Header Box End -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Page Header End -->
+                                <li class="breadcrumb-item"><a href="./">home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">video-testimonials</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- Page Header Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
 
     <!-- Page Testimonials Start -->
-    <div class="page-testimonials">
+    <div class="page-testimonials-video">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Testimonial Item Start -->
-                    <div class="testimonial-item wow fadeInUp">
+                <!-- VIDEO TESTIMONIAL -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="testimonial-video-item wow fadeInUp">
+                        <!-- ✅ VIDEO THUMBNAIL -->
+                        <div class="testimonial-video wow fadeInUp animated">
+                            <div class="video-thumbnail">
+                                <a href="javascript:void(0)" data-cursor-text="Watch"
+                                    class="video-popup video-item video-hover-card"
+                                    data-video="https://techward-assest.s3.ap-south-1.amazonaws.com/testimonial-video/don-m.mp4?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRzBFAiA0Unv1hnRv1vxYvNv7xU6w9SZ666po4GoI294gnZJHFAIhAJUQyoqzEBDW5LusdoymFJX1Y2hPPseBMNZ7%2Fc6UQEi3KsIDCJP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTY3ODc3NjI0MzA2IgzdoEDT4wFSKolhWS0qlgNDTN0IU78OzmdERa1fbu2S%2FmG6kixTr8EvAsEA0FJx9mqksx%2FbPAvMyjSc1fqcuDeOYSgi%2BVVuuiYk1F%2Br8jrc6GrCFwALH6e8PP8WX%2BvV3jcKMnSSyxPSqOxMoC6ziHh8UpB%2BIkw4Idt9btMvCEhpqHrOo95V0SP2fxDFjiWpXQPeiQ0Ha65mKYE2IIpvo0TDF3PnMv30YEuje0860ljrsJBYz78XopFkya9GfFGehZxiGqEdrk7wlmoZDnWaWzlUcVjAlC9y5F8b0bhYEyCXZa8X%2B11ODZDzBcKfOSuBfweaKmnlrALk8KreHRhxIueGArFLXR%2F1xOcGQPHDWcpZJPvXdjHO87YZtcL5GIItW2KwVhGSgnOFDNsdx6b0hX9c98iz%2FcxbEwiGpNhin4q8BzrHAkxtzeMZl9ujKY5DoRzzv6EyevmQANhKTPi1lk6Zq4CZDlawWV%2BGCitn5u8cWS8VS%2FsPdNyvJHZA9uUpxrjf4UeuDLc5TYrk%2F%2B75jJd3IZTKpusJlXD6kl97jrCpaofpgkHZMMzQ%2F8oGOt4CPKZku6A%2FKbsTy6IC6Hfq%2BMixOkfSKe1s8PksHn%2BPISwh6tp8qziMB3JrGcFw3h0pJmZcUgUX5bPlr3UMY%2FdfQPgoTnZHA85%2FZYMdg7%2Fc61q8UGL%2BXWlUZQrCHKFR5XtOIImjeWmcY4%2FMgxzBkeqVJ8xlURbVl1xBJ2D7JHCrYJ7TAuWxVHScmEWoRfH8Ero38kOzlFqyL2dJSmBfJ1pEoY5OuM%2BX%2FHsGlDycyB8yFBoLKWnEsSywwFj3tB%2FNDHjSrYwv4ZxDYmHbLOAvOuSkq5V3VEa04GLQbCZEzDYwY53DXvGI%2BioSrSdYTx2%2FZ57x5wrYThFlElJg9TbhtlGOJycXQo7oxGvSpjje2ZB9wPXTBAblYvGkFMcdJhXxSepU6FUC2SiTJhE%2FGQnzO63IUxpQH0yIlWkKPhmBvpb7ySQLTEm9N%2BjB%2FALtq6gtkwyVmQGKbnt%2FoYFBEAlKCCM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYIOBE4HZOO5MRYHH%2F20260108%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260108T172733Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=bec464f93e4e345d9c63ef9348fe1fe274ba19e63e81f1dbd6fe633423f5fe53">
+                                    <figure class="video-figure image-anime">
+                                        <img src="images/project-1.jpg" alt="Video Thumbnail">
+                                        <span class="video-overlay"></span>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="video-play-btn">
+                                <a class="video-popup"
+                                    data-video="https://techward-assest.s3.ap-south-1.amazonaws.com/testimonial-video/don-m.mp4?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRzBFAiA0Unv1hnRv1vxYvNv7xU6w9SZ666po4GoI294gnZJHFAIhAJUQyoqzEBDW5LusdoymFJX1Y2hPPseBMNZ7%2Fc6UQEi3KsIDCJP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTY3ODc3NjI0MzA2IgzdoEDT4wFSKolhWS0qlgNDTN0IU78OzmdERa1fbu2S%2FmG6kixTr8EvAsEA0FJx9mqksx%2FbPAvMyjSc1fqcuDeOYSgi%2BVVuuiYk1F%2Br8jrc6GrCFwALH6e8PP8WX%2BvV3jcKMnSSyxPSqOxMoC6ziHh8UpB%2BIkw4Idt9btMvCEhpqHrOo95V0SP2fxDFjiWpXQPeiQ0Ha65mKYE2IIpvo0TDF3PnMv30YEuje0860ljrsJBYz78XopFkya9GfFGehZxiGqEdrk7wlmoZDnWaWzlUcVjAlC9y5F8b0bhYEyCXZa8X%2B11ODZDzBcKfOSuBfweaKmnlrALk8KreHRhxIueGArFLXR%2F1xOcGQPHDWcpZJPvXdjHO87YZtcL5GIItW2KwVhGSgnOFDNsdx6b0hX9c98iz%2FcxbEwiGpNhin4q8BzrHAkxtzeMZl9ujKY5DoRzzv6EyevmQANhKTPi1lk6Zq4CZDlawWV%2BGCitn5u8cWS8VS%2FsPdNyvJHZA9uUpxrjf4UeuDLc5TYrk%2F%2B75jJd3IZTKpusJlXD6kl97jrCpaofpgkHZMMzQ%2F8oGOt4CPKZku6A%2FKbsTy6IC6Hfq%2BMixOkfSKe1s8PksHn%2BPISwh6tp8qziMB3JrGcFw3h0pJmZcUgUX5bPlr3UMY%2FdfQPgoTnZHA85%2FZYMdg7%2Fc61q8UGL%2BXWlUZQrCHKFR5XtOIImjeWmcY4%2FMgxzBkeqVJ8xlURbVl1xBJ2D7JHCrYJ7TAuWxVHScmEWoRfH8Ero38kOzlFqyL2dJSmBfJ1pEoY5OuM%2BX%2FHsGlDycyB8yFBoLKWnEsSywwFj3tB%2FNDHjSrYwv4ZxDYmHbLOAvOuSkq5V3VEa04GLQbCZEzDYwY53DXvGI%2BioSrSdYTx2%2FZ57x5wrYThFlElJg9TbhtlGOJycXQo7oxGvSpjje2ZB9wPXTBAblYvGkFMcdJhXxSepU6FUC2SiTJhE%2FGQnzO63IUxpQH0yIlWkKPhmBvpb7ySQLTEm9N%2BjB%2FALtq6gtkwyVmQGKbnt%2FoYFBEAlKCCM%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYIOBE4HZOO5MRYHH%2F20260108%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260108T172733Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=bec464f93e4e345d9c63ef9348fe1fe274ba19e63e81f1dbd6fe633423f5fe53">
+                                    <img src="images/play-white.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
                         <div class="testimonial-header">
                             <div class="testimonial-author">
                                 <div class="author-image">
                                     <figure class="image-anime">
-                                        <img src="images/author-1.jpg" alt="">
+                                        <img src="images/testimonial-don-m.jpg" alt="">
                                     </figure>
-                                </div>            
+                                </div>
                                 <div class="author-content">
-                                    <h3>Sarah Mitchell</h3>
-                                    <p>CEO of InnovateX</p>
+                                    <h3>Don M.</h3>
+                                    <p>CEO of NotesTr</p>
                                 </div>
                             </div>
-                            <div class="testimonial-quotes-img">
-                                <img src="images/testimonials-quotes-img.svg" alt="">
-                            </div>
-                        </div>                                            
-                        <div class="testimonial-content">
-                            <p>"Techward Infosolutions transformed our digital presence with cutting-edge solutions. Their expertise and dedication are unmatched."</p>
-                        </div>                                        
+                        </div>
                     </div>
-                    <!-- Testimonial Item End -->
                 </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Testimonial Item Start -->
-                    <div class="testimonial-item active wow fadeInUp" data-wow-delay="0.2s">
+                <div class="col-lg-6 col-md-6">
+                    <div class="testimonial-video-item wow fadeInUp">
+                        <!-- ✅ VIDEO THUMBNAIL -->
+                        <div class="testimonial-video wow fadeInUp animated">
+                            <div class="video-thumbnail">
+                                <a href="javascript:void(0)" data-cursor-text="Watch"
+                                    class="video-popup video-item video-hover-card"
+                                    data-video="https://techward-assest.s3.ap-south-1.amazonaws.com/testimonial-video/denise-g.mp4?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiSDBGAiEAmyJYZykPV4iu4J0O6PMC%2BZayykdP9OBfX%2BwDsC%2Fm5o8CIQD%2FaL9iDb3ju8PWFkgUodZuC4nt1f7UoPBflMLp9CGcASrCAwiT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDU2Nzg3NzYyNDMwNiIMTTh6zNLn5AGFYjQ0KpYD1pFKsMEBV74xskkiM3wdwQ%2BrbZhao0mPHywyA71iNeSXnbZI0kxfNF7wof%2B5qaB6wUV51D5W2sQGQMJmTDZbBDcwsAL%2BL8E3g%2BBQ0OfyPXTLB%2F8vI16Nxb8slEdM5AALhBoD0iKOTkK1t%2FNAhtekeBpKDajbLuttTraJWVXwfOtwlEYv4dkwLB5LNWqsUbm9codwMNtJjL9re2KiM%2FgGSjgXLg04guoyVjuoY69jXGaQddzZXFeZzQMtnAbfLwFERBUy9OsU0n04tsZnNOwtNTcoJHLGWIEqQpUTg7I55ELsWrH9NRQMyZ8Q12PBjElF5yioTxrjvUPHlGl2UM0%2FMdCwiSxmLNtoi6GunfUKpOt0OYBHEr%2FisHasl%2FtYMy%2B9VTYhpJaZ66j1al2pR8ld%2F5hVUTDKM8wf6ldbeOh4LXkjOHaQbdPSE7ij8mAEqboYJtHe5gI9l43knr1ru5CXqDCoDiGKmJqourtS1IG8OfiF8AsY1%2FsJ%2BHzKQh1g8W91ocab9CDLjFUkvsd78VpuyNgclvj3hjDM0P%2FKBjrdAgNc4SDhSEvFxzE6RF5V2o68KHUAIwVAcyTt8F0V4casNagyUuWovoT9zLcCn%2BoPaiaq%2B0jsY6xG8IAJGfNwL88%2BeqqT1yiWP2YcCaXeuWvuEmZhMqWhVyMUcBSjhSdD%2FJ0P%2Be7toVnDP%2FI2eb3I5Z%2FQK89xw07bTtavKnc%2BWu%2FZWtx%2B52jF%2FH7scMMyx1Nz%2FxiZkfOsjTRg6t4ZrLB6pZ6QA80vop0IMaCXLLt26uQybu5JVd5Wz%2FB8Hhwcfc0CM48haNaBVilnB0Dxj0TAtKtja6xz8Xy46Vn6VHf8wIeMdwvpKdDVs9JyaPl%2Bi5MVeltmpmMZABEtywJN6hqcU29BliGe3vYi8bgl9uRXKJIMUQiHObYY7wqnUNruJ9FAhSmljESnM2u6xAwXgcrGqe58CUcmwCImQU1kA%2F%2BgH8IpD%2Fwt8KO2Vc%2FckRWXs2oNMfd2dEbgH8ZyTo66YXE%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYIOBE4HZNLUACI3A%2F20260108%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260108T174256Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=248ecdc9b64f986d2c9cc182c5f172825816a468fb92e4254844eed46efb00dc">
+                                    <figure class="video-figure image-anime">
+                                        <img src="images/project-1.jpg" alt="Video Thumbnail">
+                                        <span class="video-overlay"></span>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="video-play-btn">
+                                <a class="video-popup"
+                                    data-video="https://techward-assest.s3.ap-south-1.amazonaws.com/testimonial-video/denise-g.mp4?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiSDBGAiEAmyJYZykPV4iu4J0O6PMC%2BZayykdP9OBfX%2BwDsC%2Fm5o8CIQD%2FaL9iDb3ju8PWFkgUodZuC4nt1f7UoPBflMLp9CGcASrCAwiT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDU2Nzg3NzYyNDMwNiIMTTh6zNLn5AGFYjQ0KpYD1pFKsMEBV74xskkiM3wdwQ%2BrbZhao0mPHywyA71iNeSXnbZI0kxfNF7wof%2B5qaB6wUV51D5W2sQGQMJmTDZbBDcwsAL%2BL8E3g%2BBQ0OfyPXTLB%2F8vI16Nxb8slEdM5AALhBoD0iKOTkK1t%2FNAhtekeBpKDajbLuttTraJWVXwfOtwlEYv4dkwLB5LNWqsUbm9codwMNtJjL9re2KiM%2FgGSjgXLg04guoyVjuoY69jXGaQddzZXFeZzQMtnAbfLwFERBUy9OsU0n04tsZnNOwtNTcoJHLGWIEqQpUTg7I55ELsWrH9NRQMyZ8Q12PBjElF5yioTxrjvUPHlGl2UM0%2FMdCwiSxmLNtoi6GunfUKpOt0OYBHEr%2FisHasl%2FtYMy%2B9VTYhpJaZ66j1al2pR8ld%2F5hVUTDKM8wf6ldbeOh4LXkjOHaQbdPSE7ij8mAEqboYJtHe5gI9l43knr1ru5CXqDCoDiGKmJqourtS1IG8OfiF8AsY1%2FsJ%2BHzKQh1g8W91ocab9CDLjFUkvsd78VpuyNgclvj3hjDM0P%2FKBjrdAgNc4SDhSEvFxzE6RF5V2o68KHUAIwVAcyTt8F0V4casNagyUuWovoT9zLcCn%2BoPaiaq%2B0jsY6xG8IAJGfNwL88%2BeqqT1yiWP2YcCaXeuWvuEmZhMqWhVyMUcBSjhSdD%2FJ0P%2Be7toVnDP%2FI2eb3I5Z%2FQK89xw07bTtavKnc%2BWu%2FZWtx%2B52jF%2FH7scMMyx1Nz%2FxiZkfOsjTRg6t4ZrLB6pZ6QA80vop0IMaCXLLt26uQybu5JVd5Wz%2FB8Hhwcfc0CM48haNaBVilnB0Dxj0TAtKtja6xz8Xy46Vn6VHf8wIeMdwvpKdDVs9JyaPl%2Bi5MVeltmpmMZABEtywJN6hqcU29BliGe3vYi8bgl9uRXKJIMUQiHObYY7wqnUNruJ9FAhSmljESnM2u6xAwXgcrGqe58CUcmwCImQU1kA%2F%2BgH8IpD%2Fwt8KO2Vc%2FckRWXs2oNMfd2dEbgH8ZyTo66YXE%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYIOBE4HZNLUACI3A%2F20260108%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260108T174256Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=248ecdc9b64f986d2c9cc182c5f172825816a468fb92e4254844eed46efb00dc">
+                                    <img src="images/play-white.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
                         <div class="testimonial-header">
                             <div class="testimonial-author">
                                 <div class="author-image">
                                     <figure class="image-anime">
-                                        <img src="images/author-2.jpg" alt="">
+                                        <img src="images/testimonial-denise-g.jpg" alt="">
                                     </figure>
-                                </div>            
+                                </div>
                                 <div class="author-content">
-                                    <h3>Micheal George</h3>
-                                    <p>CTO of Basel Tour</p>
+                                    <h3>Denise Graham</h3>
+                                    <p>Director of Alpha Christian Daycare, Inc.</p>
                                 </div>
                             </div>
-                            <div class="testimonial-quotes-img">
-                                <img src="images/testimonials-quotes-img.svg" alt="">
-                            </div>
-                        </div>                                            
-                        <div class="testimonial-content">
-                            <p>"The team delivered exactly what we needed—efficient, scalable, and innovative technology that drives our business forward."</p>
-                        </div>                                        
+                        </div>
                     </div>
-                    <!-- Testimonial Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Testimonial Item Start -->
-                    <div class="testimonial-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="testimonial-header">
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <figure class="image-anime">
-                                        <img src="images/author-3.jpg" alt="">
-                                    </figure>
-                                </div>            
-                                <div class="author-content">
-                                    <h3>Emily Davis</h3>
-                                    <p>Product Manager at BrightWave</p>
-                                </div>
-                            </div>
-                            <div class="testimonial-quotes-img">
-                                <img src="images/testimonials-quotes-img.svg" alt="">
-                            </div>
-                        </div>                                            
-                        <div class="testimonial-content">
-                            <p>"Professional, reliable, and forward-thinking. They turned our vision into reality with seamless execution."</p>
-                        </div>                                        
-                    </div>
-                    <!-- Testimonial Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Testimonial Item Start -->
-                    <div class="testimonial-item wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="testimonial-header">
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <figure class="image-anime">
-                                        <img src="images/author-4.jpg" alt="">
-                                    </figure>
-                                </div>            
-                                <div class="author-content">
-                                    <h3>Mason D</h3>
-                                    <p>fintech startup</p>
-                                </div>
-                            </div>
-                            <div class="testimonial-quotes-img">
-                                <img src="images/testimonials-quotes-img.svg" alt="">
-                            </div>
-                        </div>                                            
-                        <div class="testimonial-content">
-                            <p>"Working with this team we game-changer. The AI-enhanced they delivered helped  reduce bounce rates by 40% engagement like never before."</p>
-                        </div>                                        
-                    </div>
-                    <!-- Testimonial Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Testimonial Item Start -->
-                    <div class="testimonial-item wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="testimonial-header">
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <figure class="image-anime">
-                                        <img src="images/author-5.jpg" alt="">
-                                    </figure>
-                                </div>            
-                                <div class="author-content">
-                                    <h3>Ethan R</h3>
-                                    <p>fintech startup</p>
-                                </div>
-                            </div>
-                            <div class="testimonial-quotes-img">
-                                <img src="images/testimonials-quotes-img.svg" alt="">
-                            </div>
-                        </div>                                            
-                        <div class="testimonial-content">
-                            <p>"Working with this team we game-changer. The AI-enhanced they delivered helped  reduce bounce rates by 40% engagement like never before."</p>
-                        </div>                                        
-                    </div>
-                    <!-- Testimonial Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Testimonial Item Start -->
-                    <div class="testimonial-item wow fadeInUp" data-wow-delay="1s">
-                        <div class="testimonial-header">
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <figure class="image-anime">
-                                        <img src="images/author-6.jpg" alt="">
-                                    </figure>
-                                </div>            
-                                <div class="author-content">
-                                    <h3>Logan P</h3>
-                                    <p>fintech startup</p>
-                                </div>
-                            </div>
-                            <div class="testimonial-quotes-img">
-                                <img src="images/testimonials-quotes-img.svg" alt="">
-                            </div>
-                        </div>                                            
-                        <div class="testimonial-content">
-                            <p>"Working with this team we game-changer. The AI-enhanced they delivered helped  reduce bounce rates by 40% engagement like never before."</p>
-                        </div>                                        
-                    </div>
-                    <!-- Testimonial Item End -->
                 </div>
             </div>
         </div>
@@ -238,23 +287,30 @@
     <footer class="main-footer">
         <div id="mainFooter"></div>
         <div class="row">
-             <div class="col-lg-12" style="position: relative;">
+            <div class="col-lg-12" style="position: relative;">
                 <!-- Footer Copyright Text Start -->
                 <div class="footer-copyright-text" style="padding: 15px 0 0px;">
                     <p>All © Copyrights Reserved By Techward Infosolutions</p>
                 </div>
-                <div class="footer-policy-text" style="position: absolute; top: 0; right: 90px; border: none; padding: 0px;     margin-top: 14px;">
+                <div class="footer-policy-text"
+                    style="position: absolute; top: 0; right: 90px; border: none; padding: 0px;     margin-top: 14px;">
                     <div class="footer-links">
-                        <p><a href="#">Term & Conditions</a></p> | 
-                        <p><a href="#">Privacy Policy</a></p> |
-                        <p><a href="#">Sitemap</a></p>
+                        <p><a href="terms-conditions.html">Terms & Conditions</a></p> |
+                        <p><a href="#">Privacy Policy</a></p>
                     </div>
                 </div>
-                <!-- Footer Copyright Text End -->     
+                <!-- Footer Copyright Text End -->
             </div>
         </div>
     </footer>
     <!-- Footer End -->
+    <div id="videoPopup" class="mfp-hide">
+        <div class="popup-card">
+            <video id="popupVideo" controls autoplay playsinline>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
 
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -279,8 +335,8 @@
     <!-- Text Effect js file -->
     <script src="js/SplitText.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
-	<!-- SmoothScroll -->
-	<script src="js/SmoothScroll.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
     <!-- YTPlayer js File -->
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <!-- Wow js file -->
@@ -288,4 +344,5 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
 </body>
+
 </html>
