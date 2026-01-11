@@ -982,7 +982,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .about-us{
-	padding: 80px 0 50px;
+	padding: 30px 0 50px;
 }
 
 .about-us .section-title.section-title-center{
@@ -1104,7 +1104,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-services{
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .service-item{
@@ -1226,7 +1226,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .how-it-work{
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .how-work-item{
@@ -1374,7 +1374,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-facts{
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .facts-item{
@@ -1427,7 +1427,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-projects{
-    padding: 80px 0 50px;
+    padding: 30px 0 25px;
 }
 
 .our-projects .container-fluid{
@@ -1559,13 +1559,16 @@ header.main-header .header-sticky.active{
     text-transform: capitalize;
     margin: 0;
 }
+.project-more-button{
+    text-align: right;
+}
 
 /************************************/
 /***      10. Real Impact css     ***/
 /************************************/
 
 .real-impacts{
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .real-impact-item{
@@ -1664,7 +1667,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .cta-box{
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .cta-box-box{
@@ -1730,7 +1733,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .what-we-do{
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .what-we-box{
@@ -1818,7 +1821,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-testimonials{
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .testimonials-box{
@@ -1831,7 +1834,7 @@ header.main-header .header-sticky.active{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 80px;
+    padding: 30px;
     overflow: hidden;
 }
 
@@ -1992,7 +1995,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-faqs{
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .faqs-content{
@@ -2055,7 +2058,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-blog{
-    padding: 80px 0 130px;
+    padding: 30px 0 130px;
 }
 
 .post-item{
@@ -2149,6 +2152,8 @@ header.main-header .header-sticky.active{
 .footer-logo img{
     width: 100%;
     max-width: 202px;
+    margin-left: -6px;
+    margin-top: -20px;
 }
 
 .about-footer .certification{
@@ -2298,7 +2303,7 @@ header.main-header .header-sticky.active{
     background: url('../images/page-header-bg.png') no-repeat;
     background-position: center center;
     background-size: cover;
-	padding: 265px 0 80px;
+	padding: 170px 0 120px;
 	z-index: 1;
 }
 
@@ -2400,7 +2405,7 @@ header.main-header .header-sticky.active{
 }
 
 .our-approach{
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .approach-item{
@@ -2480,7 +2485,7 @@ header.main-header .header-sticky.active{
     margin-bottom: 0;
 }
 
-.approach-image{
+.approach-image {
     position: relative;
     margin-left: 15px;
 }
@@ -2550,7 +2555,7 @@ header.main-header .header-sticky.active{
 }
 
 .our-solution{
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 .our-solution-content{
@@ -2635,7 +2640,7 @@ header.main-header .header-sticky.active{
 }
 
 .our-team{
-	padding: 80px 0 50px;
+	padding: 30px 0 50px;
 }
 
 .team-item{
@@ -2748,7 +2753,7 @@ header.main-header .header-sticky.active{
 }
 
 .our-faqs.about-our-faqs{
-    padding: 80px 0 160px;
+    padding: 30px 0 160px;
 }
 
 /************************************/
@@ -2756,7 +2761,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-services{
-    padding: 80px 0 50px;
+    padding: 30px 0 50px;
 }
 
 /************************************/
@@ -2764,7 +2769,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-service-single{
-    padding: 80px 0 160px;
+    padding: 30px 0 160px;
 }
 
 .page-single-sidebar{
@@ -3153,7 +3158,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-blog{
-	padding: 80px 0 160px;
+	padding: 30px 0 160px;
 }
 
 .page-pagination{
@@ -3194,7 +3199,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-single-post{
-	padding: 80px 0 160px;
+	padding: 30px 0 160px;
 }
 
 .post-single-meta ol li{
@@ -3442,7 +3447,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-projects{
-    padding: 80px 0 130px;
+    padding: 30px 0 130px;
 }
 
 /************************************/
@@ -3450,7 +3455,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-project-single{
-    padding: 80px 0 160px;
+    padding: 30px 0 160px;
 }
 
 .project-category{
@@ -3623,7 +3628,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-team{
-    padding: 80px 0 130px;
+    padding: 30px 0 130px;
 }
 
 /************************************/
@@ -3631,7 +3636,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-team-single{
-    padding: 80px 0 160px;
+    padding: 30px 0 160px;
 }
 
 .team-single-image{
@@ -3850,7 +3855,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-testimonials{
-    padding: 80px 0 50px;
+    padding: 30px 0 50px;
 }
 
 .page-testimonials .testimonial-item{
@@ -3897,7 +3902,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-testimonials-video{
-    padding: 80px 0 50px;
+    padding: 30px 0 50px;
 }
 
 .page-testimonials-video .testimonial-video-item{
@@ -3932,7 +3937,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-gallery{
-	padding: 80px 0 130px;
+	padding: 30px 0 130px;
 }
 
 .page-gallery-box .photo-gallery{
@@ -3961,7 +3966,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-video-gallery{
-	padding: 80px 0 130px;
+	padding: 30px 0 130px;
 }
 
 .video-gallery-image{
@@ -4041,7 +4046,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-faqs{
-	padding: 80px 0 160px;
+	padding: 30px 0 160px;
 }
 
 .page-faqs .page-faq-accordion{
@@ -4057,7 +4062,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-contact-us{
-	padding: 80px 0 160px;
+	padding: 30px 0 160px;
 }
 
 .conatct-us-form{
@@ -4194,7 +4199,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .error-page{
-	padding: 80px 0 160px;
+	padding: 30px 0 160px;
 }
 
 .error-page-image{
@@ -4346,7 +4351,7 @@ button.btnxmark {
 /************************************/
 
 .our-awards{
-    padding: 80px 0 50px;
+    padding: 30px 0 50px;
 }
 
 .our-awards .container-fluid{
@@ -4413,6 +4418,83 @@ button.btnxmark {
 	visibility: visible;
 }
 
+/************************************/
+/***     Industries css      ***/
+/************************************/
+.industry-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid var(--divider-color);
+    background: url('../images/service-item-bg.svg'), var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+    height: calc(100% - 60px);
+    margin-bottom: 30px;
+    /* padding: 30px; */
+    transition: all 0.4s ease-in-out;
+}
+
+.industry-item:hover{
+    transform: translateY(-5px);
+}
+
+.industry-item-image{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.industry-item-image figure{
+    display: block;
+}
+.industry-item-image figure img{
+    border-radius: 20px;
+}
+.industries-slider{
+    padding-top: 8px;
+    margin-bottom: 50px;
+}
+.industries-slider .industries-slider-pagination{
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    z-index: 2;
+}
+.industries-slider .swiper-slide {
+    height: initial !important;
+}
+.testimonial-video-item{
+    position: relative;
+    margin-left: 15px;
+}
+.testimonial-video-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#06060660, var(--bg-color));
+    opacity: 100%;
+    width: 100%;
+    height: 100%;
+    animation: none;
+    z-index: 1;
+}
+.testimonial-video-item .testimonial-video {
+    width: 100%;
+}
+.testimonial-video-item .testimonial-video video {
+    width: 100%;
+    height: 421px;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
 /************************************/
 /***      33. Responsive css      ***/
 /************************************/

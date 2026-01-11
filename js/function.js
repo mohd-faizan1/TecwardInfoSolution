@@ -92,6 +92,36 @@
 		});
 	}
 
+	if ($('.industries-slider').length) {
+		const service_slider = new Swiper('.industries-slider .swiper', {
+			speed: 3000,
+			spaceBetween: 30,
+			loop: true,
+			autoplay: {
+				delay: 1000,
+			},
+			pagination: {
+				el: '.service-slider-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.service-slider-button-next',
+				prevEl: '.service-slider-button-prev',
+			},
+			breakpoints: {
+				480: {
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 1,
+				},
+				991: {
+					slidesPerView: 1,
+				}
+			}
+		});
+	}
+
 	/* testimonial Slider JS */
 	if ($('.testimonial-slider').length) {
 		const testimonial_slider = new Swiper('.testimonial-slider .swiper', {
@@ -374,32 +404,32 @@
 	);
 
 	$('.video-popup').magnificPopup({
-        type: 'inline',
-        fixedContentPos: true,
-        closeBtnInside: true,
-        showCloseBtn: true,
-        removalDelay: 200,
-        mainClass: 'mfp-fade',
-        items: {
-            src: '#videoPopup'
-        },
-        callbacks: {
-            open: function () {
-                var videoUrl = this.st.el.data('video');
-                $('#popupVideo source').attr('src', videoUrl);
-                $('#popupVideo')[0].load();
-            },
-            close: function () {
-                var video = $('#popupVideo')[0];
-                video.pause();
-                $('#popupVideo source').attr('src', '');
-            }
-        }
-    });
+		type: 'inline',
+		fixedContentPos: true,
+		closeBtnInside: true,
+		showCloseBtn: true,
+		removalDelay: 200,
+		mainClass: 'mfp-fade',
+		items: {
+			src: '#videoPopup'
+		},
+		callbacks: {
+			open: function () {
+				var videoUrl = this.st.el.data('video');
+				$('#popupVideo source').attr('src', videoUrl);
+				$('#popupVideo')[0].load();
+			},
+			close: function () {
+				var video = $('#popupVideo')[0];
+				video.pause();
+				$('#popupVideo source').attr('src', '');
+			}
+		}
+	});
 
 	$('body').append($(stickyHtml));
 	// END: Create Sticky Contact Icons
-	
+
 	$(function () {
 		var $s1 = $("<script>", {
 			async: true,
@@ -407,32 +437,32 @@
 			charset: "UTF-8",
 			crossorigin: "*"
 		});
-		
+
 		// insert before the first existing <script> tag
 		$("script").first().before($s1);
 	});
 	$("#header").load("header.html", function () {
 		let currentPage = window.location.pathname.split("/").pop();
-		
+
 		$("#header .nav-link").each(function () {
 			let linkPage = $(this).attr("href");
-			
+
 			if (linkPage === currentPage) {
 				$(this).addClass("active");
 			}
 		});
 	});
-	
+
 	$("#mainFooter").load("footer.html");
 	var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-	
-	
+
+
 	// $(window).on('scroll', function() {
-		//   if ($(this).scrollTop() < 100) {
-			//     $('.header-sticky').addClass('show');
-			//   } else {
-				//     $('.header-sticky').removeClass('show');
-				//   }
-				// });
+	//   if ($(this).scrollTop() < 100) {
+	//     $('.header-sticky').addClass('show');
+	//   } else {
+	//     $('.header-sticky').removeClass('show');
+	//   }
+	// });
 
 })(jQuery);
