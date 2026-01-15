@@ -605,7 +605,7 @@ header.main-header .header-sticky.active{
 	text-align: left;
 }
 .main-menu ul ul.with-partition{
-	width: 90%;
+	width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 partitions */
     grid-row-gap: 10px;
@@ -617,6 +617,7 @@ header.main-header .header-sticky.active{
 .main-menu ul ul.with-partition img{
 	width: 30px;
     filter: brightness(0) saturate(100%) invert(1);
+    margin-right: 5px;
 }
 .main-menu .navbar-nav .nav-item.submenu:has(> ul.with-partition) {
     position: static !important;
@@ -1737,48 +1738,12 @@ header.main-header .header-sticky.active{
 }
 
 .what-we-box{
-    background: var(--secondary-color) url('../images/what-we-do-box-bg.svg');
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: auto;
-    border: 1px solid var(--divider-color);
-    border-radius: 20px;
-    padding: 50px 45px;
-    text-align: center;
     margin-right: 15px;
 }
-
-.what-we-box h3{
-    font-size: 20px;
-    line-height: 1.3em;
-    margin-bottom: 50px;
-}
-
-.what-we-img img{
+.what-we-box img{
     width: 100%;
+    border-radius: 20px;
 }
-
-.what-we-img-list ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.what-we-img-list ul li{
-    width: auto;
-    line-height: 1.3em;
-    border: 1px solid var(--divider-color);
-    background: var(--secondary-color) url(../images/icon-sparkle-gradient.svg) no-repeat;
-    background-position: left 15px center;
-    background-size: 20px auto;
-    border-radius: 100px;
-    padding: 10px 15px 10px 45px;
-}
-
 .what-we-do-content{
     margin-left: 15px;
 }
@@ -2956,8 +2921,7 @@ header.main-header .header-sticky.active{
 }
 
 .page-single-image img{
-    width: 100%;
-    aspect-ratio: 1 / 0.598;
+    aspect-ratio: 1 / 1.6;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -3483,7 +3447,7 @@ header.main-header .header-sticky.active{
     color: var(--primary-color);
     border-bottom: 1px solid var(--divider-color);
     display: flex;
-    gap: 25px;
+    gap: 10px;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
@@ -3491,6 +3455,8 @@ header.main-header .header-sticky.active{
 .project-category-list ul li span{
     font-size: 16px;
     font-weight: 400;
+    border-left: 1px solid #ffffff1f;
+    padding-left: 10px;
 }
 
 .category-social-link{
@@ -3597,6 +3563,7 @@ header.main-header .header-sticky.active{
 }
 
 .project-challenge-box,
+.project-impact-result,
 .project-solution-box{
     margin-top: 60px;
 }
@@ -3681,6 +3648,16 @@ header.main-header .header-sticky.active{
     background-color: var(--divider-color);
     width: 1px;
     height: 100%;
+}
+.project-entry .project-impact-result ul li::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
 }
 
 .member-info-box .section-title h3{
@@ -4556,6 +4533,11 @@ button.btnxmark {
 	.slicknav_nav ul{
         display: block;
     }
+	.slicknav_nav li ul.with-partition img{
+        width: 30px;
+        filter: brightness(0) saturate(100%) invert(1);
+        margin-right: 5px;
+    }
 
 	.responsive-menu,
     .navbar-toggle{
@@ -4860,7 +4842,6 @@ button.btnxmark {
     }
 
     .what-we-box{
-        padding: 40px 35px;
         margin-right: 0;
         margin-bottom: 30px;
     }
@@ -5314,6 +5295,7 @@ button.btnxmark {
     }
 
     .project-challenge-box,
+    .project-impact-result,
     .project-solution-box{
         margin-top: 40px;
     }

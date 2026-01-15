@@ -39,7 +39,7 @@
 	<div class="preloader">
 		<div class="loading-container">
 			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+			<div id="loading-icon"><img src="images/loader.png" alt=""></div>
 		</div>
 	</div>
 	<!-- Preloader End -->
@@ -82,7 +82,8 @@
                         </div>
                         <div class="service-item-image">
                             <figure>
-                                <img src="images/Services/service-ai.jpg" alt="">
+                                <img src="images/Services-AI Integration & Deployment.jpeg" alt="">
+                                <!-- <img src="images/Services/service-ai.jpg" alt=""> -->
                             </figure>
                         </div>
                     </div>
@@ -233,16 +234,16 @@
                     <!-- Service Item End -->
                 </div>
                 
-                <div class="col-lg-4 col-md-6" id="blockchain">
+                <div class="col-lg-4 col-md-6" id="iot">
                     <!-- Service Item Start -->
                     <div class="service-item wow fadeInUp" data-wow-delay="2s">
                         <div class="service-item-content">
-                            <h3><a href="service-single.html">Blockchain Technologies</a></h3>
-                            <p>Secure and transparent blockchain solutions for modern enterprises. Empowering systems with trust and efficiency.</p>
+                            <h3><a href="service-single.html">IoT Development</a></h3>
+                            <p>Smart IoT solutions for real-time monitoring, automation, and decision-making. Building scalable, secure systems for businesses.</p>
                         </div>
                         <div class="service-item-image">
                             <figure>
-                                <img src="images/Services/service-blockchain.jpg" alt="">
+                                <img src="images/Services/service-iot.webp" alt="">
                             </figure>
                         </div>
                     </div>
@@ -323,6 +324,28 @@
     <script src="js/function.js"></script>
 
     <script>
+        $(document).ready(function () {
+        
+            function scrollToHash(offset = 100, speed = 400) {
+                var scrollTargetId = window.location.hash;
+            
+                if (scrollTargetId && $(scrollTargetId).length) {
+                    $('html, body').animate({
+                        scrollTop: $(scrollTargetId).offset().top - offset
+                    }, speed);
+                }
+            }
+        
+            // ✅ Page load scroll
+            scrollToHash(100, 200);
+        
+            // ✅ Hash change scroll
+            $(window).on("hashchange", function () {
+                scrollToHash(100, 200);
+            });
+        
+        });
+
         function adjustPanelHeight() {
             $('.page-services .row').each(function () {
                 var row = $(this);

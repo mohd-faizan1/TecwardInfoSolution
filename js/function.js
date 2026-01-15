@@ -152,6 +152,28 @@
 	}
 
 	/* Skill Bar */
+
+	if ($('.project-single-slider').length) {
+	  const testimonial_slider = new Swiper('.project-single-slider .swiper', {
+	    slidesPerView: 1.15,
+	    speed: 1000,
+	    spaceBetween: 20,
+	    loop: true,
+	    autoplay: {
+	      delay: 5000,
+	    },
+	    breakpoints: {
+	      768: {
+	        slidesPerView: 2.2,
+	      },
+	      991: {
+	        slidesPerView: 2.3,
+	      }
+	    }
+	  });
+	}
+
+	/* Skill Bar */
 	if ($('.skills-progress-bar').length) {
 		$('.skills-progress-bar').waypoint(function () {
 			$('.skillbar').each(function () {
@@ -402,6 +424,8 @@
 			)
 		)
 	);
+	$('body').append($(stickyHtml));
+	// END: Create Sticky Contact Icons
 
 	$('.video-popup').magnificPopup({
 		type: 'inline',
@@ -427,9 +451,7 @@
 		}
 	});
 
-	$('body').append($(stickyHtml));
-	// END: Create Sticky Contact Icons
-
+	// Start: Chatbot
 	$(function () {
 		var $s1 = $("<script>", {
 			async: true,
@@ -441,6 +463,8 @@
 		// insert before the first existing <script> tag
 		$("script").first().before($s1);
 	});
+
+	// End: Chatbot
 	$("#header").load("header.html", function () {
 		let currentPage = window.location.pathname.split("/").pop();
 
