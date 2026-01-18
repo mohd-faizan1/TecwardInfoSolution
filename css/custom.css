@@ -738,6 +738,8 @@ header.main-header .header-sticky.active{
     width: 100%;
 	padding: 0;
 	background: linear-gradient(110deg, var(--accent-color) 0%, var(--accent-secondary-color) 100%);
+    max-height: calc(-100px + 100vh);
+    overflow: auto;
 }
 
 .slicknav_menu ul{
@@ -1153,6 +1155,9 @@ header.main-header .header-sticky.active{
 
 .service-item-image figure{
     display: block;
+}
+.service-item-image figure img{
+    aspect-ratio: 1/0.65;
 }
 
 .service-list{
@@ -2128,6 +2133,12 @@ header.main-header .header-sticky.active{
 .about-footer .certification img{
     width: 60px;
 }
+.about-footer .certification .dmca,
+.about-footer .certification .iso{
+    width: 100px;
+    margin-left: 30px;
+}
+
 
 .footer-contact-box{
     display: flex;
@@ -2258,7 +2269,92 @@ header.main-header .header-sticky.active{
     width: 100%;
     border-radius: 10px;
 }
+.footer-info-list{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+    margin-top: 50px;
+}
 
+.footer-info-item{
+	position: relative;
+	width: calc(25% - 22.5px);
+    border: 1px solid var(--divider-color);
+	background: var(--secondary-color) url('../images/contact-info-item-bg.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
+	border-radius: 20px;
+    text-align: center;
+	padding: 30px;
+	overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer-info-item .icon-box,
+.footer-info-content{
+	position: relative;
+	z-index: 1;
+}
+.footer-info-item:hover{
+    transform: translateY(-5px);
+}
+.footer-info-item .icon-box{
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin: 0 auto 40px;
+	overflow: hidden;
+}
+.footer-info-item .icon-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+    z-index: 2;
+}
+.footer-info-item:hover .icon-box::before{
+    opacity: 0.4; /* 40% */
+    visibility: visible;
+    transform: scale(1);
+}
+.footer-info-item .icon-box img{
+    position: relative;
+	width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+
+.footer-info-content h3{
+	font-size: 20px;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+}
+
+.footer-info-content p{
+	margin-bottom: 2px;
+}
+
+.footer-info-content p:last-child{
+	margin-bottom: 0;
+}
+
+.footer-info-content p a{
+	color: inherit;
+}
 /************************************/
 /***     17. About Us Page css    ***/
 /************************************/
@@ -2718,7 +2814,7 @@ header.main-header .header-sticky.active{
 }
 
 .our-faqs.about-our-faqs{
-    padding: 30px 0 160px;
+    padding: 30px 0 80px;
 }
 
 /************************************/
@@ -2734,7 +2830,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-service-single{
-    padding: 30px 0 160px;
+    padding: 30px 0 80px;
 }
 
 .page-single-sidebar{
@@ -2845,8 +2941,8 @@ header.main-header .header-sticky.active{
 }
 
 .sidebar-cta-logo{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3122,7 +3218,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-blog{
-	padding: 30px 0 160px;
+	padding: 30px 0 80px;
 }
 
 .page-pagination{
@@ -3163,7 +3259,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-single-post{
-	padding: 30px 0 160px;
+	padding: 30px 0 80px;
 }
 
 .post-single-meta ol li{
@@ -3419,7 +3515,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-project-single{
-    padding: 30px 0 160px;
+    padding: 30px 0 80px;
 }
 
 .project-category{
@@ -3590,6 +3686,102 @@ header.main-header .header-sticky.active{
     margin-bottom: 5px;
 }
 
+/*Project Single Video*/
+
+.project-video .project-video-image{
+	height: calc(100% - 30px);
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.project-video .project-video-image a{
+	position: relative;
+	display: block;
+}
+.project-video .project-video-image a i{
+	position: relative;
+	display: block;
+}
+
+.project-video .project-video-image a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+	border-radius: 20px;
+    opacity: 0%;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}
+
+.project-video .project-video-image:hover a::before{
+    opacity: 40%;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.project-video .project-video-image a::after{
+    content: '\f04b';
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background: linear-gradient(136.83deg, var(--accent-color) 2.01%, var(--accent-secondary-color) 97.82%);
+    color: var(--primary-color);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 1;            /* ✅ default show */
+    visibility: visible;   /* ✅ default show */
+
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+
+.project-video .project-video-image:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-video .project-video-image img{
+	width: 100%;
+	aspect-ratio: 1 / 0.629;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.video-embed{
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 1 / 0.629;
+}
+.video-embed video{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
 /************************************/
 /***      24. Team Page css       ***/
 /************************************/
@@ -3603,7 +3795,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-team-single{
-    padding: 30px 0 160px;
+    padding: 30px 0 80px;
 }
 
 .team-single-image{
@@ -3648,6 +3840,9 @@ header.main-header .header-sticky.active{
     background-color: var(--divider-color);
     width: 1px;
     height: 100%;
+}
+.project-entry .project-impact-result h2 {
+    font-size: 28px;
 }
 .project-entry .project-impact-result ul li::before {
     content: '';
@@ -4023,7 +4218,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-faqs{
-	padding: 30px 0 160px;
+	padding: 30px 0 80px;
 }
 
 .page-faqs .page-faq-accordion{
@@ -4039,7 +4234,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-contact-us{
-	padding: 30px 0 160px;
+	padding: 30px 0 80px;
 }
 
 .conatct-us-form{
@@ -4093,7 +4288,7 @@ header.main-header .header-sticky.active{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .contact-info-item{
@@ -4176,7 +4371,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .error-page{
-	padding: 30px 0 160px;
+	padding: 30px 0 80px;
 }
 
 .error-page-image{
@@ -5715,7 +5910,32 @@ button.btnxmark {
         margin-top: 30px;
         padding: 15px 0;
     }
-
+    .footer-info-list{
+        flex-direction: column;
+    }
+    .footer-info-list .footer-info-item {
+        width: 100%;
+    }
+    .about-footer .certification img{
+        width: 100px;
+    }
+    .about-footer .certification .dmca,
+    .about-footer .certification .iso{
+        width: 225px;
+        margin-left: 30px;
+    }
+    .footer-logo img {
+        max-width: 380px;
+    }
+    .footer-item-menu-section{
+        display: flex;
+    }
+     .footer-item-menu-section .footer-links p {
+        white-space: nowrap;
+        width: 190px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .page-header-box h1{
         font-size: 30px;
     }
@@ -5921,6 +6141,10 @@ button.btnxmark {
     .team-single-image img{
         aspect-ratio: 1 / 1.15;
         object-position: center center;
+    }
+
+    .industry-item-row:nth-child(odd){
+        flex-direction: column-reverse;
     }
 
     .member-info-box,
