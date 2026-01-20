@@ -1,6 +1,5 @@
 /* ----------------------------------------------------------------------------------------
-* Author        : Awaiken
-* Template Name : Nextmind - AI Agency & Technology HTML Template
+* Author        : Mohd Faizan
 * File          : CSS File
 * Version       : 1.0
 * ---------------------------------------------------------------------------------------- */
@@ -1374,6 +1373,7 @@ header.main-header .header-sticky.active{
 .section-footer-text p a:hover{
 	color: var(--primary-color);
 }
+.footer-contact-box
 
 /************************************/
 /***       08. Our Facts css      ***/
@@ -2149,6 +2149,10 @@ header.main-header .header-sticky.active{
 .footer-contact-box .footer-links{
     width: calc(50% - 15px);
 }
+.footer-contact-box .technologies a{
+    cursor: pointer;
+}
+
 
 .footer-links h3{
     font-size: 20px;
@@ -4667,6 +4671,113 @@ button.btnxmark {
     border-radius: 20px;
     overflow: hidden;
 }
+/******************************************/
+/***        14. Privary Policy css      ***/
+/******************************************/
+
+.privacy-policy {
+    padding: 30px 0;
+}
+.privacy-policy blockquote {
+    background: url(../images/icon-blockquote.svg), var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: 30px 30px;
+    background-size: 45px;
+    border: 1px solid var(--divider-color);
+    border-radius: 20px;
+    padding: 30px 30px 30px 90px;
+    margin-bottom: 30px;
+}
+.privacy-policy blockquote p{
+    margin: 0px;
+}
+.privacy-policy p a {
+    font-weight: 600;
+    /* text-transform: capitalize; */
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.privacy-policy .privacy-policy-accordion .accordion-item{
+	position: relative;
+    background: var(--secondary-color);
+    border: 1px solid var(--divider-color);
+	border-radius: 10px;
+	margin-bottom: 30px;
+    padding: 0;
+	overflow: hidden;
+}
+
+.privacy-policy .privacy-policy-accordion .accordion-item:last-child{
+	margin-bottom: 0;
+}
+
+.privacy-policy .privacy-policy-accordion .accordion-header .accordion-button{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.333em;
+    background: transparent;
+	color: var(--primary-color);
+	padding: 20px 50px 20px 20px;
+}
+
+.privacy-policy .privacy-policy-accordion .accordion-item .accordion-button::after, 
+.privacy-policy .privacy-policy-accordion.accordion-item .accordion-button.collapsed::after{
+    content: '\f107';
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.privacy-policy .privacy-policy-accordion .accordion-button:not(.collapsed)::after{
+    transform:  translateY(-50%) rotate(180deg);
+}
+
+.privacy-policy .privacy-policy-accordion .accordion-item .accordion-body{
+    border-top: 1px solid var(--divider-color);
+	padding: 20px;
+}
+
+.privacy-policy .privacy-policy-accordion .accordion-item .accordion-body p{
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.privacy-policy .privacy-policy-accordion .accordion-item .accordion-body p:first-child{
+    margin-top: 0;
+}
+
+.privacy-policy .privacy-policy-accordion .accordion-item .accordion-body p:last-child{
+    margin-bottom: 0;
+}
+.privacy-policy .privacy-policy-accordion .accordion-item .accordion-body  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.privacy-policy .privacy-policy-accordion .accordion-item .accordion-body ul li {
+    position: relative;
+    line-height: 1.5em;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.privacy-policy .privacy-policy-accordion .accordion-item .accordion-body ul li::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
 /************************************/
 /***      33. Responsive css      ***/
 /************************************/
@@ -4737,6 +4848,9 @@ button.btnxmark {
 	.responsive-menu,
     .navbar-toggle{
         display: block;
+    }
+    .ic-stickey{
+        display: none;
     }
 
 	.header-btn{
