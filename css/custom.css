@@ -2138,17 +2138,19 @@ header.main-header .header-sticky.active{
     width: 100px;
     margin-left: 30px;
 }
-
+.about-footer .certification .iso{
+    border-radius: 8px;
+}
 
 .footer-contact-box{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-
-.footer-contact-box .footer-links{
-    width: calc(50% - 15px);
+.footer-contact-box .section-btn a{
+    padding: 17px 12px;
 }
+
 .footer-contact-box .technologies a{
     cursor: pointer;
 }
@@ -2158,6 +2160,7 @@ header.main-header .header-sticky.active{
     font-size: 20px;
     text-transform: capitalize;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .footer-links p{
@@ -2248,10 +2251,11 @@ header.main-header .header-sticky.active{
     transform: translate(-50%, -50%);
 }
 .footer-policy-text{
-    border-top: 1px solid var(--divider-color);
+    position: absolute; 
+    top: 0; 
+    right: 90px;
     text-align: center;
-    margin-top: 30px;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 .footer-policy-text .footer-links{
     display: flex;
@@ -2262,7 +2266,7 @@ header.main-header .header-sticky.active{
 .footer-copyright-text{
     border-top: 1px solid var(--divider-color);
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0px;
 }
 
 .footer-copyright-text p{
@@ -5267,7 +5271,7 @@ button.btnxmark {
     }
 
     .footer-contact-box .footer-links{
-        width: calc(50% - 10px);
+        width: calc(100% - 10px);
     }
 
     .footer-privacy-policy{
@@ -5277,6 +5281,10 @@ button.btnxmark {
     .footer-copyright-text{
         margin-top: 40px;
         padding: 30px 0;
+    }
+
+    .footer-info-list .footer-info-item {
+        width: calc(50% - 22.5px);
     }
 
     .page-header{
@@ -6041,15 +6049,7 @@ button.btnxmark {
     .footer-logo img {
         max-width: 380px;
     }
-    .footer-item-menu-section{
-        display: flex;
-    }
-     .footer-item-menu-section .footer-links p {
-        white-space: nowrap;
-        width: 190px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+
     .page-header-box h1{
         font-size: 30px;
     }
@@ -6330,5 +6330,51 @@ button.btnxmark {
     header.main-header .header-sticky{
     	top: 0 !important;
         transition: none; 
+    }
+    .footer-copyright-text {
+        margin-top: 0px;
+        padding-bottom: 6px;
+    }
+    .footer-policy-text {
+        position: unset;
+        padding: 0px;
+        padding-bottom: 6px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .about-footer .certification .dmca, .about-footer .certification .iso {
+        width: 180px;
+    }
+    .about-footer .certification img {
+        width: 90px;
+    }
+    .footer-contact-box .footer-links p {
+        white-space: nowrap;
+        max-width: 190px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .footer-contact-box .section-btn a {
+        font-size: 13px;
+    }
+    .footer-copyright-text {
+        margin: 0px 5px 0px 5px;;
+        padding-bottom: 6px;
+    }
+    .footer-policy-text {
+        position: unset;
+        padding: 0px;
+        padding-bottom: 6px;
+    }
+}
+@media (max-width: 991px) and (orientation: landscape) {
+  .footer-copyright-text {
+        margin: 0px 5px 0px 5px;;
+        padding-bottom: 6px;
+    }
+    .footer-policy-text {
+        position: unset;
+        padding: 0px;
+        padding-bottom: 6px;
     }
 }

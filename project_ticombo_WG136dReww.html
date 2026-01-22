@@ -1,179 +1,53 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
 <head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Awaiken">
-    <!-- Page Title -->
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Awaiken">
+	<!-- Page Title -->
     <title>Techward Infosolutions</title>
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-    <!-- Google Fonts Css-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- Bootstrap Css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- SlickNav Css -->
-    <link href="css/slicknav.min.css" rel="stylesheet">
-    <!-- Swiper Css -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!-- Font Awesome Icon Css-->
-    <link href="css/all.min.css" rel="stylesheet" media="screen">
-    <!-- Animated Css -->
-    <link href="css/animate.css" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- SlickNav Css -->
+	<link href="css/slicknav.min.css" rel="stylesheet">
+	<!-- Swiper Css -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<!-- Font Awesome Icon Css-->
+	<link href="css/all.min.css" rel="stylesheet" media="screen">
+	<!-- Animated Css -->
+	<link href="css/animate.css" rel="stylesheet">
     <!-- Magnific Popup Core Css File -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- Mouse Cursor Css File -->
-    <link rel="stylesheet" href="css/mousecursor.css">
-    <!-- Main Custom Css -->
-    <link href="css/custom.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Mouse Cursor Css File -->
+	<link rel="stylesheet" href="css/mousecursor.css">
+	<!-- Main Custom Css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
     <style>
-        /* ===============================
-           VIDEO POPUP (Magnific Popup)
-           =============================== */
-        .mfp-content {
-            width: 100%;
-            max-width: 1096px;
-            padding: 12px;
-        }
-
-        .popup-card {
-            position: relative;
-            background:linear-gradient(to right, #592c1b 0%, var(--accent-secondary-color) 50%, #592c1b 100%);
-            border-radius: 12px;
-            padding: 40px 12px 12px 12px;
-        }
-
-        .popup-card video {
-            width: 100%;
-            max-height: 80vh;
-            object-fit: contain;
-        }
-
-        .mfp-close {
-            position: absolute !important;
-            right: 10px !important;
-            top: 10px !important;
-            line-height: 42px;
-            font-size: 26px;
-            color: #fff !important;
-            background: rgba(0, 0, 0, 0.6);
-            opacity: 1;
-            z-index: 9999;
-        }
-
-        /* ===============================
-           TESTIMONIAL VIDEO THUMBNAIL
-           =============================== */
-        .testimonial-video-item .testimonial-video {
-            position: relative;
-        }
-
-        .testimonial-video-item .video-thumb {
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .testimonial-video-item .video-thumb video {
-            width: 100%;
-            display: block;
-            border-radius: 8px;
-        }
-
-        .testimonial-video-item .video-thumbnail a {
-            display: block;
-            cursor: none;
-        }
-
-        .testimonial-video-item .video-thumbnail figure {
-            display: block;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        .testimonial-video-item .video-thumbnail figure:before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(180deg, rgba(6, 6, 6, 0) 49.26%, rgba(6, 6, 6, 0.6) 86.32%);
-            z-index: 1;
-        }
-
-        .testimonial-video-item .video-thumbnail img {
-            width: 100%;
-            aspect-ratio: 1 / 01;
-            object-fit: cover;
-            border-radius: 20px;
-            transition: all 0.4s ease-in-out;
-        }
-
-        .testimonial-video-item .testimonial-video:hover .video-thumbnail img {
-            transform: scale(1.1);
-            filter: blur(5px);
-        }
-
-        /* ===============================
-           PLAY BUTTON
-           =============================== */
-        .testimonial-video-item .video-play-btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s ease-in-out;
-            z-index: 1;
-        }
-
-        .testimonial-video-item .testimonial-video:hover .video-play-btn {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .testimonial-video-item .video-play-btn a {
-            background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-secondary-color) 50%, var(--accent-color) 100%);
-            background-size: 200% auto;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease-in-out;
-            cursor: pointer;
-        }
-
-        .testimonial-video-item .video-play-btn a:hover {
-            background-position: right center;
-            transform: rotate(120deg);
-        }
-
-        .testimonial-video-item .video-play-btn a img {
-            width: 100%;
-            max-width: 30px;
-            transition: all 0.3s ease-in-out;
+        .page-single-image img {
+            aspect-ratio: 1 / 0;
         }
     </style>
 </head>
-
 <body>
 
     <!-- Preloader Start -->
-    <div class="preloader">
-        <div class="loading-container">
-            <div class="loading"></div>
-            <div id="loading-icon"><img src="images/loader.png" alt=""></div>
-        </div>
-    </div>
-    <!-- Preloader End -->
+	<div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="images/loader.png" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
 
     <!-- Header Start -->
 	<header class="main-header">
@@ -328,147 +202,195 @@
             <div class="responsive-menu"></div>
         </div>
     </header>
-    <!-- Header End -->
+	<!-- Header End -->
 
     <!-- Page Header Start -->
-    <div class="page-header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <!-- Page Header Box Start -->
-                    <div class="page-header-box">
-                        <h1 class="wow fadeInUp" data-cursor="-opaque">Video <span>testimonials</span></h1>
-                        <nav class="wow fadeInUp" data-wow-delay="0.2s">
+	<div class="page-header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-12">
+					<!-- Page Header Box Start -->
+					<div class="page-header-box">
+						<h1 class="wow fadeInUp" data-cursor="-opaque">Ticombo – Global Ticket Marketplace <span>Platform</span></h1>
+						<nav class="wow fadeInUp" data-wow-delay="0.2s">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="./">home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">video-testimonials</li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <!-- Page Header Box End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Page Header End -->
+								<li class="breadcrumb-item"><a href="./">home</a></li>
+								<li class="breadcrumb-item"><a href="projects.html">projects</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Ticombo – Global Ticket Marketplace Platform</li>
+							</ol>
+						</nav>
+					</div>
+					<!-- Page Header Box End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header End -->
 
-    <!-- Page Testimonials Start -->
-    <div class="page-testimonials-video">
+    <!-- Page Project Single Start -->
+    <div class="page-project-single">
         <div class="container">
             <div class="row">
-                <!-- VIDEO TESTIMONIAL -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-video-item wow fadeInUp">
-                        <!-- ✅ VIDEO THUMBNAIL -->
-                        <div class="testimonial-video wow fadeInUp animated">
-                            <div class="video-thumbnail">
-                                <a href="javascript:void(0)" data-cursor-text="Watch"
-                                    class="video-popup video-item video-hover-card"
-                                    data-video="https://d8x2q5mpblvx9.cloudfront.net/techward-assets/testimonial-video/don-m.mp4">
-                                    <figure class="video-figure image-anime">
-                                        <img src="images/tsml-thumb-don-m.png" alt="Video Thumbnail">
-                                        <span class="video-overlay"></span>
-                                    </figure>
-                                </a>
+                <div class="col-lg-4">
+                    <!-- Page Single Sidebar Start -->
+                    <div class="page-single-sidebar">
+                        <!-- Project Category List Start -->
+                        <div class="project-category wow fadeInUp">
+                            <!-- Page Category List Start -->
+                            <div class="project-category-list">
+                                <ul>
+                                    <li>Project <span>Ticombo</span></li>
+                                    <li>Company <span>Ticombo</span></li>
+                                    <li>Category <span>Marketplace Platform, Web Development, Event Ticketing</span></li>
+                                    <li>Platforms <span>Web</span></li>
+                                    <!-- <li>Built With <span></span></li> -->
+                                </ul>
                             </div>
-                            <div class="video-play-btn">
-                                <a class="video-popup"
-                                    data-video="https://d8x2q5mpblvx9.cloudfront.net/techward-assets/testimonial-video/don-m.mp4">
-                                    <img src="images/play-white.svg" alt="">
-                                </a>
+                            <!-- Page Category List End -->
+                            
+                            <!-- Category Social Link Start -->
+                            <div class="category-social-link">
+                                <h3 style="border-right: 1px solid #ffffff1f; padding-right: 15px;">Link</h3>
+                                <ul>
+                                    <li><a href="https://www.ticombo.com/" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li>
+                                </ul>
                             </div>
+                            <!-- Category Social Link End -->
                         </div>
-                        <div class="testimonial-header">
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <figure class="image-anime">
-                                        <img src="images/testimonial-don-m.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="author-content">
-                                    <h3>Don M.</h3>
-                                    <p>CEO of NotesTr</p>
-                                </div>
+                        <!-- Project Category List End -->
+
+                        <!-- Sidebar CTA Box Start -->
+                        <div class="sidebar-cta-box">
+                            <!-- Sidebar CTA Logo Start -->
+                            <div class="sidebar-cta-logo">
+                                <img src="images/favicon.png" alt="">
                             </div>
+                            <!-- Sidebar CTA Logo End -->
+                            
+                            <!-- Sidebar CTA Content Start -->
+                            <div class="sidebar-cta-content">
+                                <h3>We're here help!</h3>
+                                <p>Need assistance? We're here to help with support, guidance, and resources. Reach out to us anytime.</p>
+                            </div>
+                            <!-- Sidebar CTA Content End -->
+                            
+                            <!-- Sidebar CTA Contact Start -->
+                            <div class="sidebar-cta-contact">
+                                <ul>
+                                    <li><a href="tel:+919650765250"><img src="images/icon-phone-gradiant.svg" alt="">(+91) 96507 65250</a></li>
+                                    <li><a href="mailto:info@techwardinfosolutions.com"><img src="images/icon-mail-gradiant.svg" alt="">info@techwardinfosolutions.com</a></li>
+                                </ul>
+                            </div>
+                            <!-- Sidebar CTA Contact End -->
                         </div>
+                        <!-- Sidebar CTA Box End -->
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-video-item wow fadeInUp">
-                        <!-- ✅ VIDEO THUMBNAIL -->
-                        <div class="testimonial-video wow fadeInUp animated">
-                            <div class="video-thumbnail">
-                                <a href="javascript:void(0)" data-cursor-text="Watch"
-                                    class="video-popup video-item video-hover-card"
-                                    data-video="https://d8x2q5mpblvx9.cloudfront.net/techward-assets/testimonial-video/denise-g.mp4">
-                                    <figure class="video-figure image-anime">
-                                        <img src="images/tsml-thumb-don-denise.png" alt="Video Thumbnail">
-                                        <span class="video-overlay"></span>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="video-play-btn">
-                                <a class="video-popup"
-                                    data-video="https://d8x2q5mpblvx9.cloudfront.net/techward-assets/testimonial-video/denise-g.mp4">
-                                    <img src="images/play-white.svg" alt="">
-                                </a>
+
+                <div class="col-lg-8">
+                    <!-- Project Single Content Start -->
+                    <div class="project-single-contemt">
+                        <!-- Page Single Image Start -->
+                        <div class="page-single-image project-single-slider-web">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- Slide 1 -->
+                                    <div class="swiper-slide">
+                                        <figure class="image-anime reveal">
+                                            <img src="images/Projects/project-ticombo1.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="swiper-slide">
+                                        <figure class="image-anime reveal">
+                                            <img src="images/Projects/project-ticombo2.png" alt="">
+                                        </figure>
+                                    </div>
+                                     <!-- Slide 3 -->
+                                    <div class="swiper-slide">
+                                        <figure class="image-anime reveal">
+                                            <img src="images/Projects/project-ticombo3.png" alt="">
+                                        </figure>
+                                    </div>
+                                     <!-- Slide 4 -->
+                                    <div class="swiper-slide">
+                                        <figure class="image-anime reveal">
+                                            <img src="images/Projects/project-ticombo4.png" alt="">
+                                        </figure>
+                                    </div>
+                                    <!-- Slide 5 -->
+                                    <div class="swiper-slide">
+                                        <figure class="image-anime reveal">
+                                            <img src="images/Projects/project-ticombo5.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="testimonial-header">
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <figure class="image-anime">
-                                        <img src="images/testimonial-denise-g.jpg" alt="">
-                                    </figure>
+                        <!-- Page Single Image End -->
+                        
+                        <!-- Project Entry Start -->
+                        <div class="project-entry">
+                            <h2 class="wow fadeInUp">Project <span>overview</span></h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Techward Infosolutions designed and developed Ticombo, a global event ticket marketplace platform that connects buyers and sellers for concerts, sports, theater, and live events worldwide. The objective was to build a secure, scalable, and high-performance marketplace capable of handling large volumes of listings, searches, and transactions while delivering a smooth and trustworthy user experience.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.4s">The platform allows users to browse events, compare ticket offers from multiple sellers, securely purchase tickets, and manage orders, while providing sellers with tools to list, manage, and price tickets dynamically. The system was built with performance, reliability, and international scalability in mind.</p>
+
+                            <!-- Project Challenge Box Start -->
+                            <div class="project-challenge-box">
+                                <h2 class="wow fadeInUp">Client challenges & <span>requirements</span></h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">Building a ticket marketplace requires high trust, speed, and accuracy. The client needed a platform that could handle real-time ticket availability, multiple currencies, international users, and secure payments while maintaining fast search and browsing experiences.</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s">Key challenges included building a robust marketplace architecture, preventing fraud, ensuring secure transactions, managing large event catalogs, and delivering a seamless experience across devices. The platform also needed powerful admin and seller tools to manage listings, pricing, orders, and disputes.</p>
+                                
+                                <!-- Project Challenge List Start -->
+                                <div class="project-challenge-list wow fadeInUp" data-wow-delay="0.4s">
+                                    <ul>
+                                        <li>Scalable multi-vendor ticket marketplace architecture</li>
+                                        <li>Advanced search, filtering, and event discovery</li>
+                                        <li>Secure payment processing and fraud protection</li>
+                                        <li>Seller dashboards for ticket listing and management</li>
+                                        <li>Buyer order management and digital ticket delivery</li>
+                                        <li>Multi-currency and international-ready infrastructure</li>
+                                        <li>High-performance and mobile-optimized experience</li>
+                                    </ul>
                                 </div>
-                                <div class="author-content">
-                                    <h3>Denise Graham</h3>
-                                    <p>Director of Alpha Christian Daycare, Inc.</p>
+                                <!-- Project Challenge List End -->
+                            </div>
+                            <!-- Project Challenge Box End -->
+                            
+                            <!-- Project Solution Box Start -->
+                            <div class="project-solution-box">
+                                <h2 class="wow fadeInUp">Project <span>solution</span></h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">Techward Infosolutions delivered a full-scale, enterprise-grade ticket marketplace platform engineered for speed, security, and global scalability. We built a powerful search and discovery engine, allowing users to quickly find events and compare ticket offers from different sellers.</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s">The platform includes secure checkout, automated order processing, seller management tools, pricing controls, and dispute handling workflows. We implemented a scalable backend infrastructure capable of handling traffic spikes during major events. The user interface was designed to be fast, intuitive, and conversion-focused across both desktop and mobile devices.</p>
+                            </div>
+                            <!-- Project Solution Box End -->
+
+                            <!-- Project Impact & Result Start -->
+                            <div class="project-impact-result">
+                               <h2 class="wow fadeInUp">Impact & <span>Results</span></h2>
+                                <!-- Project Challenge List Start -->
+                                <div class="project-challenge-list wow fadeInUp" data-wow-delay="0.4s">
+                                    <ul>
+                                        <li>High-performance global ticket marketplace platform</li>
+                                        <li>Secure and trusted buying &amp; selling experience</li>
+                                        <li>Fast search and discovery across millions of listings</li>
+                                        <li>Scalable architecture ready for peak traffic events</li>
+                                        <li>Multi-currency and international support</li>
+                                        <li>Strong seller ecosystem and buyer satisfaction</li>
+                                        <li>Robust admin control and marketplace governance</li>
+                                    </ul>
                                 </div>
                             </div>
+                            <!-- Project Impact & Result End -->
                         </div>
+                        <!-- Project Entry End -->
                     </div>
+                    <!-- Project Single Content End -->
                 </div>
-                <!-- <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-video-item wow fadeInUp"> -->
-                        <!-- ✅ VIDEO THUMBNAIL -->
-                        <!-- <div class="testimonial-video wow fadeInUp animated">
-                            <div class="video-thumbnail">
-                                <a href="javascript:void(0)" data-cursor-text="Watch"
-                                    class="video-popup video-item video-hover-card"
-                                    data-video="">
-                                    <figure class="video-figure image-anime">
-                                        <img src="images/project-1.jpg" alt="Video Thumbnail">
-                                        <span class="video-overlay"></span>
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="video-play-btn">
-                                <a class="video-popup" data-video="">
-                                    <img src="images/play-white.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="testimonial-header">
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <figure class="image-anime">
-                                        <img src="images/no-image.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="author-content">
-                                    <h3>Micheal George</h3>
-                                    <p>CTO of Basel Tour</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
-    <!-- Page Testimonials End -->
-
+    <!-- Page Project Single End -->
     <!-- Footer Start -->
     <footer class="main-footer">
          <div class="container">
@@ -659,13 +581,6 @@
         </div>
     </footer>
     <!-- Footer End -->
-    <div id="videoPopup" class="mfp-hide">
-        <div class="popup-card">
-            <video id="popupVideo" controls autoplay playsinline>
-                <source src="" type="video/mp4">
-            </video>
-        </div>
-    </div>
 
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -690,8 +605,8 @@
     <!-- Text Effect js file -->
     <script src="js/SplitText.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
-    <!-- SmoothScroll -->
-    <script src="js/SmoothScroll.js"></script>
+	<!-- SmoothScroll -->
+	<script src="js/SmoothScroll.js"></script>
     <!-- YTPlayer js File -->
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <!-- Wow js file -->
@@ -699,5 +614,4 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
 </body>
-
-</html>
+</html>	

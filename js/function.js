@@ -450,7 +450,44 @@
 			}
 		}
 	});
-
+ 	if ($('.project-single-slider-web').length) {
+	  const testimonial_slider = new Swiper('.project-single-slider-web .swiper', {
+	    slidesPerView: 1.15,
+	    speed: 1000,
+	    spaceBetween: 20,
+	    loop: true,
+	    autoplay: {
+	      delay: 5000,
+	    },
+	    breakpoints: {
+	      768: {
+	        slidesPerView: 1.05,
+	      },
+	      991: {
+	        slidesPerView: 1.1,
+	      }
+	    }
+	  });
+	}
+	if ($('.project-single-slider-app').length) {
+	  const testimonial_slider = new Swiper('.project-single-slider-app .swiper', {
+	    slidesPerView: 1.15,
+	    speed: 1000,
+	    spaceBetween: 20,
+	    loop: true,
+	    autoplay: {
+	      delay: 5000,
+	    },
+	    breakpoints: {
+	      768: {
+	        slidesPerView: 3.05,
+	      },
+	      991: {
+	        slidesPerView: 3.1,
+	      }
+	    }
+	  });
+	}
 	// Start: Chatbot
 	$(function () {
 		var $s1 = $("<script>", {
