@@ -281,7 +281,7 @@ body{
     position: absolute;
 	right: 0;
 	top: 0;
-    background: url('../images/arrow-accent.svg');
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/arrow-accent.svg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 8px auto;
@@ -398,7 +398,7 @@ body{
     top: 50%;
     left: 24px;
     transform: translateY(-50%);
-    background: url('../images/icon-sparkle.svg') no-repeat;
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/icon-sparkle.svg') no-repeat;
     background-position: left center;
     background-size: cover;
     width: 16px;
@@ -412,7 +412,7 @@ body{
     top: 50%;
     right: 24px;
     transform: translateY(-50%);
-    background: url('../images/icon-sparkle.svg') no-repeat;
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/icon-sparkle.svg') no-repeat;
     background-position: right center;
     background-size: cover;
     width: 16px;
@@ -803,7 +803,7 @@ header.main-header .header-sticky.active{
 
 .hero{
 	position: relative; 
-    background: url('../images/hero-bg-shape.png') no-repeat;
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/hero-bg-shape.png') no-repeat;
     background-position: top center;
     background-size: auto;
 	padding: 340px 0 80px;
@@ -816,7 +816,7 @@ header.main-header .header-sticky.active{
     position: absolute;
     left: 160px;
     top: 20%;
-    background: url(../images/section-bg-shape-1.png) no-repeat;
+    background: url(https://d4xo83brt2zm0.cloudfront.net/images/section-bg-shape-1.png) no-repeat;
     background-position: left center;
     background-size: cover;
     width: 113px;
@@ -841,7 +841,7 @@ header.main-header .header-sticky.active{
     position: absolute;
     right: 220px;
     top: 20%;
-    background: url(../images/section-bg-shape-2.png) no-repeat;
+    background: url(https://d4xo83brt2zm0.cloudfront.net/images/section-bg-shape-2.png) no-repeat;
     background-position: right center;
     background-size: cover;
     width: 82px;
@@ -853,7 +853,7 @@ header.main-header .header-sticky.active{
 
 .hero.hero-bg-image{
 	position: relative;
-	background: url('../images/hero-bg.jpg') no-repeat;
+	background: url('https://d4xo83brt2zm0.cloudfront.net/images/hero-bg.jpg') no-repeat;
 	background-position: center center;
 	background-size: cover;
 }
@@ -909,7 +909,7 @@ header.main-header .header-sticky.active{
     position: absolute;
     left: -28%;
     bottom: 20%;
-    background: url(../images/section-bg-shape-3.png) no-repeat;
+    background: url(https://d4xo83brt2zm0.cloudfront.net/images/section-bg-shape-3.png) no-repeat;
     background-position: left center;
     background-size: cover;
     width: 81px;
@@ -934,7 +934,7 @@ header.main-header .header-sticky.active{
     position: absolute;
     right: -28%;
     bottom: 20%;
-    background: url(../images/section-bg-shape-4.png) no-repeat;
+    background: url(https://d4xo83brt2zm0.cloudfront.net/images/section-bg-shape-4.png) no-repeat;
     background-position: right center;
     background-size: cover;
     width: 122px;
@@ -1114,7 +1114,7 @@ header.main-header .header-sticky.active{
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid var(--divider-color);
-    background: url('../images/service-item-bg.svg'), var(--secondary-color);
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/service-item-bg.svg'), var(--secondary-color);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1178,7 +1178,7 @@ header.main-header .header-sticky.active{
 
 .service-list ul li{
     border: 1px solid var(--divider-color);
-    background: var(--secondary-color) url('../images/icon-sparkle.svg') no-repeat;
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/icon-sparkle.svg') no-repeat;
     background-position: left 15px center;
     background-size: 20px auto;
     line-height: 1.3em;
@@ -1384,7 +1384,7 @@ header.main-header .header-sticky.active{
 }
 
 .facts-item{
-    background: var(--secondary-color) url('../images/facts-item-bg.svg') no-repeat;
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/facts-item-bg.svg') no-repeat;
     background-position: center center;
     background-size: cover;
     border: 1px solid var(--divider-color);
@@ -1559,7 +1559,7 @@ header.main-header .header-sticky.active{
 
 .project-content p{
     padding-left: 25px;
-    background: url('../images/icon-sparkle.svg') no-repeat;
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/icon-sparkle.svg') no-repeat;
     background-position: left center;
     background-size: 18px auto;
     text-transform: capitalize;
@@ -1584,7 +1584,7 @@ header.main-header .header-sticky.active{
 
 .real-impact-image{
     border: 1px solid var(--divider-color);
-    background: var(--secondary-color) url('../images/real-impact-image-bg.svg') no-repeat;
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/real-impact-image-bg.svg') no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
@@ -1678,7 +1678,7 @@ header.main-header .header-sticky.active{
 
 .cta-box-box{
     position: relative;
-    background: var(--secondary-color) url('../images/cta-box-bg.svg');
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/cta-box-bg.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1693,7 +1693,7 @@ header.main-header .header-sticky.active{
     position: absolute;
     left: 60px;
     top: 60px;
-    background: url(../images/section-bg-shape-1.png) no-repeat;
+    background: url(https://d4xo83brt2zm0.cloudfront.net/images/section-bg-shape-1.png) no-repeat;
     background-position: left top;
     background-size: cover;
     width: 113px;
@@ -1709,7 +1709,7 @@ header.main-header .header-sticky.active{
     position: absolute;
     right: 60px;
     bottom: 80px;
-    background: url(../images/section-bg-shape-2.png) no-repeat;
+    background: url(https://d4xo83brt2zm0.cloudfront.net/images/section-bg-shape-2.png) no-repeat;
     background-position: right bottom;
     background-size: cover;
     width: 82px;
@@ -1795,7 +1795,7 @@ header.main-header .header-sticky.active{
 }
 
 .testimonials-box{
-    background: var(--secondary-color) url('../images/testimonials-box-bg.svg');
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/testimonials-box-bg.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -2033,7 +2033,7 @@ header.main-header .header-sticky.active{
 
 .post-item{
     position: relative;
-    background: var(--secondary-color) url('../images/post-item-bg.svg') no-repeat;
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/post-item-bg.svg') no-repeat;
     background-position: center center;
     background-size: cover;
     border: 1px solid var(--divider-color);
@@ -2097,7 +2097,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .main-footer{
-    background: url('../images/footer-bg.png') no-repeat;
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/footer-bg.png') no-repeat;
     background-position: bottom center;
     background-size: auto;
     border-top: 1px solid var(--divider-color);
@@ -2288,7 +2288,7 @@ header.main-header .header-sticky.active{
 	position: relative;
 	width: calc(25% - 22.5px);
     border: 1px solid var(--divider-color);
-	background: var(--secondary-color) url('../images/contact-info-item-bg.png') no-repeat;
+	background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/contact-info-item-bg.png') no-repeat;
     background-position: center center;
     background-size: cover;
 	border-radius: 20px;
@@ -2369,7 +2369,7 @@ header.main-header .header-sticky.active{
 
 .page-header{
 	position: relative;
-    background: url('../images/page-header-bg.png') no-repeat;
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/page-header-bg.png') no-repeat;
     background-position: center center;
     background-size: cover;
 	padding: 170px 0 120px;
@@ -2382,7 +2382,7 @@ header.main-header .header-sticky.active{
     position: absolute;
     left: 160px;
     bottom: 20%;
-    background: url('../images/section-bg-shape-1.png') no-repeat;
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/section-bg-shape-1.png') no-repeat;
     background-position: left center;
     background-size: cover;
     width: 113px;
@@ -2407,7 +2407,7 @@ header.main-header .header-sticky.active{
     position: absolute;
     right: 220px;
     top: 40%;
-    background: url('../images/section-bg-shape-2.png') no-repeat;
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/section-bg-shape-2.png') no-repeat;
     background-position: right center;
     background-size: cover;
     width: 82px;
@@ -2650,7 +2650,7 @@ header.main-header .header-sticky.active{
 
 .solution-item:nth-child(4n - 3),
 .solution-item:nth-child(4n - 4){
-    background: url('../images/solution-item-bg.svg') no-repeat;
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/solution-item-bg.svg') no-repeat;
     background-position: center center;
     background-size: cover;
     border: 1px solid var(--divider-color);
@@ -2743,7 +2743,7 @@ header.main-header .header-sticky.active{
     left: 20px;
     right: 20px;
     border: 1px solid var(--divider-color);
-    background: var(--secondary-color) url('../images/team-body-bg.svg') no-repeat;
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/team-body-bg.svg') no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
@@ -2848,7 +2848,7 @@ header.main-header .header-sticky.active{
 }
 
 .page-catagery-list{
-    background: var(--secondary-color) url('../images/sidebar-catagery-list-bg.svg') no-repeat;
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/sidebar-catagery-list-bg.svg') no-repeat;
     background-position: center center;
     background-size: cover;
 	border: 1px solid var(--divider-color);
@@ -2903,7 +2903,7 @@ header.main-header .header-sticky.active{
     position: absolute;
 	right: 0;
 	top: 0;
-    background: url('../images/arrow-accent.svg');
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/arrow-accent.svg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 8px auto;
@@ -2933,7 +2933,7 @@ header.main-header .header-sticky.active{
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../images/sidebar-cta-box.jpg') no-repeat;
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/sidebar-cta-box.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 30%;
@@ -3107,7 +3107,7 @@ header.main-header .header-sticky.active{
     flex-wrap: wrap;
     gap: 30px;
     border: 1px solid var(--divider-color);
-    background: var(--secondary-color) url('../images/service-impact-list-bg.svg') no-repeat;
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/service-impact-list-bg.svg') no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
@@ -3418,7 +3418,7 @@ header.main-header .header-sticky.active{
 }
 
 .post-entry blockquote{
-	background: url('../images/icon-blockquote.svg'), var(--secondary-color);
+	background: url('https://d4xo83brt2zm0.cloudfront.net/images/icon-blockquote.svg'), var(--secondary-color);
 	background-repeat: no-repeat;
 	background-position: 30px 30px;
     background-size: 45px;
@@ -3528,7 +3528,7 @@ header.main-header .header-sticky.active{
 
 .project-category{
     border: 1px solid var(--divider-color);
-    background: var(--secondary-color) url('../images/sidebar-catagery-list-bg.svg') no-repeat;
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/sidebar-catagery-list-bg.svg') no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
@@ -4041,7 +4041,7 @@ header.main-header .header-sticky.active{
 .page-testimonials .testimonial-item{
     position: relative;
     border: 1px solid var(--divider-color);
-    background: var(--secondary-color) url('../images/testimonial-item-bg.svg') no-repeat;
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/testimonial-item-bg.svg') no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
@@ -4088,7 +4088,7 @@ header.main-header .header-sticky.active{
 .page-testimonials-video .testimonial-video-item{
     position: relative;
     border: 1px solid var(--divider-color);
-    background: var(--secondary-color) url('../images/testimonial-item-bg.svg') no-repeat;
+    background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/testimonial-item-bg.svg') no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 20px;
@@ -4254,7 +4254,7 @@ header.main-header .header-sticky.active{
 }
 
 .contact-form{
-	background: var(--secondary-color) url('../images/contact-form-bg.png') no-repeat;
+	background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/contact-form-bg.png') no-repeat;
     background-position: center center;
     background-size: cover;
 	padding: 40px;
@@ -4303,7 +4303,7 @@ header.main-header .header-sticky.active{
 	position: relative;
 	width: calc(25% - 22.5px);
     border: 1px solid var(--divider-color);
-	background: var(--secondary-color) url('../images/contact-info-item-bg.png') no-repeat;
+	background: var(--secondary-color) url('https://d4xo83brt2zm0.cloudfront.net/images/contact-info-item-bg.png') no-repeat;
     background-position: center center;
     background-size: cover;
 	border-radius: 20px;
@@ -4606,7 +4606,7 @@ button.btnxmark {
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid var(--divider-color);
-    background: url('../images/service-item-bg.svg'), var(--secondary-color);
+    background: url('https://d4xo83brt2zm0.cloudfront.net/images/service-item-bg.svg'), var(--secondary-color);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -4683,7 +4683,7 @@ button.btnxmark {
     padding: 30px 0;
 }
 .privacy-policy blockquote {
-    background: url(../images/icon-blockquote.svg), var(--secondary-color);
+    background: url(https://d4xo83brt2zm0.cloudfront.net/images/icon-blockquote.svg), var(--secondary-color);
     background-repeat: no-repeat;
     background-position: 30px 30px;
     background-size: 45px;
@@ -6105,7 +6105,7 @@ button.btnxmark {
     }
 
     .solution-item:nth-child(4n - 1){
-        background: url('../images/solution-item-bg.svg') no-repeat;
+        background: url('https://d4xo83brt2zm0.cloudfront.net/images/solution-item-bg.svg') no-repeat;
         background-size: cover;
         background-position: center center;
         border: 1px solid var(--divider-color);
@@ -6365,6 +6365,9 @@ button.btnxmark {
         position: unset;
         padding: 0px;
         padding-bottom: 6px;
+    }
+    .our-awards .border-right{
+        border-right-width: 0px;
     }
 }
 @media (max-width: 991px) and (orientation: landscape) {

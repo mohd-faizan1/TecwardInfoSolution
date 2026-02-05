@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Block useless/system files
+Disallow: /cgi-bin/
+Disallow: /error_log
+Disallow: /used-images.txt
+Disallow: /*.zip$
+
+# Allow important assets
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://www.techwardinfosolutions.com/sitemap.xml

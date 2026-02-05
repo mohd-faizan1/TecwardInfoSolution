@@ -489,16 +489,17 @@
 	  });
 	}
 	// Start: Chatbot
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 	$(function () {
-		var $s1 = $("<script>", {
+		var s1 = $("<script>", {
 			async: true,
-			src: "https://embed.tawk.to/690b9f3f8f9062194f4e0527/1j9amc4qc",
+			src: "https://embed.tawk.to/6980ec49c519551c3514dc0b/1jgfpm0pj",
 			charset: "UTF-8",
 			crossorigin: "*"
 		});
 
 		// insert before the first existing <script> tag
-		$("script").first().before($s1);
+		$("script").first().before($(s1));
 	});
 
 	// End: Chatbot
@@ -513,10 +514,6 @@
 			}
 		});
 	});
-
-	$("#mainFooter").load("footer.html");
-	var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-
 
 	// $(window).on('scroll', function() {
 	//   if ($(this).scrollTop() < 100) {

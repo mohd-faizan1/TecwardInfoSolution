@@ -1,0 +1,119 @@
+# ===============================
+# MAIN INDEX & ERROR PAGE
+# ===============================
+
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+
+# ===============================
+# REWRITE ENGINE
+# ===============================
+
+RewriteEngine On
+
+
+# ===============================
+# FORCE HTTPS
+# ===============================
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+# ===============================
+# FORCE WWW
+# ===============================
+
+RewriteCond %{HTTP_HOST} !^www\.techwardinfosolutions\.com$ [NC]
+RewriteRule ^ https://www.techwardinfosolutions.com%{REQUEST_URI} [L,R=301]
+
+
+# ===============================
+# REMOVE index.html
+# ===============================
+
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ https://www.techwardinfosolutions.com/ [L,R=301]
+
+
+# ===============================
+# OLD PHP → HTML
+# ===============================
+
+Redirect 301 /index.php /
+Redirect 301 /about.php /about.html
+Redirect 301 /contact.php /contact.html
+Redirect 301 /services.php /services.html
+Redirect 301 /mobile-app-development.php /services.html
+Redirect 301 /website-design-development.php /services.html
+Redirect 301 /portfolio.php /projects.html
+Redirect 301 /privacy-policy.php /privacy-policy.html
+Redirect 301 /terms-conditions.php /terms-conditions.html
+
+
+# ===============================
+# REMOVE .HTML FROM URL (SEO CLEAN)
+# ===============================
+
+# Redirect .html → no extension
+RewriteCond %{THE_REQUEST} \s/+(.*)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Serve file internally
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+
+# ===============================
+# ENABLE GZIP
+# ===============================
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json text/xml application/xml
+</IfModule>
+
+
+# ===============================
+# BROWSER CACHE
+# ===============================
+
+<IfModule mod_expires.c>
+ExpiresActive On
+
+ExpiresByType text/html "access plus 1 hour"
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType application/javascript "access plus 7 days"
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/webp "access plus 30 days"
+ExpiresByType image/svg+xml "access plus 30 days"
+</IfModule>
+
+
+# ===============================
+# SECURITY HEADERS
+# ===============================
+
+<IfModule mod_headers.c>
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+
+# ===============================
+# DISABLE DIRECTORY LIST
+# ===============================
+
+Options -Indexes
+
+
+# ===============================
+# CPANEL PHP HANDLER
+# ===============================
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
